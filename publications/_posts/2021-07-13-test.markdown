@@ -6,5 +6,9 @@ image_onhover: /publications/images/pre_hover.jpg
 author: "Raunak Dey"
 authors: "<strong>Raunak Dey</strong>, Avijit Kundu, Biswajit Das and Ayan Banerjee."
 venue: "Physical Review E"
+links:
+  code: https://github.com/vsimkus/academic-jekyll
+  paper: https://journals.aps.org/pre/pdf/10.1103/PhysRevE.106.054113
+  arxiv: https://arxiv.org/pdf/2104.00127
 ---
 Build a numerical framework to analyze stochastic trajectories of Brownian particles and showed that their thermodyanmic currents follow arcsine distributions.
