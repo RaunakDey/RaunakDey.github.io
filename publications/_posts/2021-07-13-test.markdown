@@ -7,7 +7,6 @@ author: "Raunak Dey"
 authors: "<strong>Raunak Dey</strong>, Avijit Kundu, Biswajit Das and Ayan Banerjee."
 venue: "Physical Review E"
 links:
-  code: https://github.com/vsimkus/academic-jekyll
   paper: https://journals.aps.org/pre/pdf/10.1103/PhysRevE.106.054113
   arxiv: https://arxiv.org/pdf/2104.00127
 ---
