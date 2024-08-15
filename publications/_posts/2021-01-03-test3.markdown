@@ -1,8 +1,8 @@
 ---
 title:  "Simultaneous random number generation and optical tweezers calibration employing a learning algorithm based on the Brownian dynamics of a trapped colloidal particle"
 date:   2021-01-03 09:26:00 +00:00
-image: /publications/images/project-image.jpg
-image_onhover: /publications/images/project-image-on-hover.jpg
+image: /publications/images/random_front.jpg
+image_onhover: /publications/images/random_front.jpg
 author: "Raunak Dey"
 authors: "<strong>Raunak Dey</strong>,Subhrokoli Ghosh, Avijit Kundu and Ayan Banerjee. "
 venue: "Frontiers in Physics"
@@ -10,4 +10,4 @@ links:
   code: https://github.com/RaunakDey/Time-series-iterative-
   PDF: https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2020.576948/pdf?isPublishedV2=false
 ---
-Used NIST tests for randomness suite to characterize how much random are experimentally smapled tracjetories of Brownian particles. Demonstrated a method to obtain real-random numbers instead of algorithmitcally generated pseudo-randoms.
+Used an iterative ML based algorithm integrated with NIST tests for randomness suite to characterize how much random are experimentally smapled tracjetories of Brownian particles. Demonstrated a method to obtain real-random numbers instead of algorithmitcally generated pseudo-randoms.
