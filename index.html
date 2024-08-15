@@ -4,7 +4,7 @@ layout: default
 
 <div class="row flex-column-reverse flex-md-row py-2">
     <div class="col-md-8" id="bio">
-        <h1>Raunak Dey</h1>
+        <h1>Raunak Dey -- this page is being created now!</h1>
         <p class="text-justify">
             I am a fourth year Physics PhD student at the <a href="https://weitzgroup.umd.edu">Quantitative Viral Dynamics<a> group at the <a href="https://umdphysics.umd.edu">University of Maryland</a>, College Park.
             I am advised by <a href="https://biology.umd.edu/people/dr-joshua-weitz">Prof. Joshua Weitz</a> and <a href="https://sjbeckett.github.io">Dr. Stephen Beckett</a>.   
@@ -14,9 +14,6 @@ layout: default
 
         <p class="text-justify">   
             I started my Physics PhD at <a href="https://physics.gatech.edu">Georgia Institute of Technology</a> in the Fall of 2021, where I earned a second <a ref="https://www.parchment.com/u/award/d54fad6b9380df07cc48c245212a81bc"MS in Physics</a> before transitioning to the University of Maryland, College Park in the Fall of 2023. Previously, I obtained a BS-MS dual degree in Physics from <a href="https://www.iiserkol.ac.in/">Indian Institute of Science Education and Research (IISER) Kolkata</a>, where I worked at the <a href="https://sites.google.com/iiserkol.ac.in/light-matter-lab-iiserk/home?authuser=0">Light-Matter lab</a> with <a href="https://sites.google.com/iiserkol.ac.in/light-matter-lab-iiserk/Group-Leader/group-leader?authuser=0">Prof. Ayan Banerjee</a>. My MS thesis was on building instrumentation and algorithms to study the  stochastic motion of brownian particles in viscoelastic fluids using optical tweezers. Also, I have interned with <a href="https://lilab.ok.ubc.ca/index.html">Dr. Isaac Li</a>, at the <a href="https://ok.ubc.ca"> University of British Columbia</a>, Canada, building a computer vision enabled remote control optical tweezers systems. I have worked with <a href="https://silvascience.org/chair/">Prof. Carlos Silva</a>, at Georgia Tech on building two-photon spectroscopy setups. I was a visiting scholar at <a href="https://www.ncra.org"> National Center for Radio Astrophysics (NCRA)</a> where I worked with <a href="http://www.ncra.tifr.res.in/ncra/people/Academic_FacultyPage?oid=249">Prof. Yashwant Gupta</a> on automated noise detection pipelines for pulsar observations.
-        </p>
-        <p class="text-justify">
-            Hi. I will make this page later. (Before Sept 2024, pinky promise)  
         </p>
         
         <p style="text-align:center">
@@ -38,14 +35,27 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <img src="images/research_webpage.png" alt="Research Image" class="research-image">
                 <h2>Research</h2>
+                <img src="images/research_webpage.png" alt="Research Image" class="research-image">
+                
                 <p>
                     <!-- Add your research description here. -->
-                    I study complex systems using the methods from Deep Learning, Physics based dynamical systems, and controls & optimization. These quantitative
-                    methods are broadly applicable to different areas in Biology, Data Science and Physics. <br>
+                    My area of expertise is in Physics and Deep Learning. I study complex systems using the methods dynamical systems, controls & optimization. These quantitative
+                    methods are broadly applicable to different types of complex systems in Biology, Data Science, Physics and Finance. Here are a few topics I have focused on:<br>
 
-                    For my PhD, I created Bayesian inverse models for one virus infecting one microbe. Then we tried to understand if
+                    1. <strong> Inference in Biology:</strong> For my PhD, I created Bayesian inverse models for one virus infecting one microbe. Then we tried to understand if
+                    this model scales to multiple viruses and microbes interacting together. Deploying our Bayesian models on experimental datasets,
+                    we found there can be multiple higher order interactions and emergent effects in the community. Next, I created a multimodal inference scheme, where I
+                    leverages data and models from Physics, ML, and Ecology -- such multimodal scheme improves both parameter inference and time-series forecasting on Viral and Microbial population datasets. <br>
+
+                    2. <strong>LLM and time series:</strong> I worked on understand the limits of LLMs in time series forecasting on complex systems, based on Physics experiments. We found methods to improve forecasting 
+                    by ensemble averaging tokens, such that, under constained context window our method outperforms LLMS whose tokens have not been engineered. <br>
+                    
+                    3. <strong>Stochastic time series:</strong> I worked extensively on stochastic time series coming from Brownian probes. I developed an iterative algorithm to study the randomness in those trajectories. 
+                    The ML algorithm featured with NIST tests for randomness extracts best possible "true random numbers", unlike computer generated "pseudo-random numbers". <br>
+                    
+                    4. <strong>Control and optmization: </strong> I developed an online feedback-control algorithm
+                    to maximise the Signal to Noise radio while performing broadband microrheology measurement on these stochastic probes. We improved the SNR 10x on a 10^3 Hz bandwidth. We used our method to study viscoelasticity of Lamin proteins. <br>
                     
                 </p>
             </div>
@@ -53,4 +63,4 @@ layout: default
     </div>
 </div>
 
-e publications.html %}
+{% include publications.html %}
