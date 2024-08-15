@@ -6,12 +6,5 @@ image_onhover: /publications/images/project-image-on-hover.jpg
 author: "John Doe"
 authors: "<strong><a href='https://vsimkus.github.io/academic-jekyll/'>John Doe</a></strong>"
 venue: "Venue"
-bib: |
-  @article{Doe2021,
-    author = {Doe J.},
-    journal = {A journal of imaginary research},
-    title = {Title of the publication},
-    year = {2021}
-  }
 ---
 Brief description of the project.
