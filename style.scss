@@ -182,3 +182,15 @@ body {
   // @extend .text-monospace;
   background-color: #f8f8f8;
 }
+
+
+.research-section {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px;
+}
+
+.research-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
