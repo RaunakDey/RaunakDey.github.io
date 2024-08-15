@@ -1,8 +1,8 @@
 ---
 title:  "Experimental verification of arcsine laws in mesoscopic nonequilibrium systems"
 date:   2022-11-13 09:26:00 +00:00
-image: /publications/images/pre_still.png
-image_onhover: /publications/images/pre_hover.png
+image: /publications/images/pre_still.jpg
+image_onhover: /publications/images/pre_hover.jpg
 author: "Raunak Dey"
 authors: "<strong>Raunak Dey</strong>, Avijit Kundu, Biswajit Das and Ayan Banerjee"
 venue: "Physical Review E"
