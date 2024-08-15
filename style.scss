@@ -190,8 +190,8 @@ body {
 }
 
 .research-image {
-    width: auto; /* Maintain aspect ratio */
-    height: 200px; /* Fixed height */
-    display: block; /* Ensure image is displayed correctly */
-    margin-right: 20px; /* Add space between image and text */
+    width: 100%; /* Make the image fill the container width */
+    height: auto; /* Adjust height to maintain aspect ratio */
+    display: block; /* Ensures the image is displayed as a block-level element */
+    margin-bottom: 20px; /* Add space between image and text */
 }
