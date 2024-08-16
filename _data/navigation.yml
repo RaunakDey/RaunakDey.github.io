@@ -10,3 +10,7 @@
   link: /
   anchor: '#research'
   highlight: false
+- name: Experience
+  link: /
+  anchor: '#experience'
+  highlight: false
