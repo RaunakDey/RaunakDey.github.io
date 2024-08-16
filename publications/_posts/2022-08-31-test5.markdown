@@ -1,8 +1,8 @@
 ---
 title:  "Nonmonotonic skewness of currents in nonequilibrium steady states"
 date:   2022-08-31 09:26:00 +00:00
-image: /publications/images/skewness.png
-image_onhover: /publications/images/skewness.png
+image: /publications/images/skewness.jpg
+image_onhover: /publications/images/skewness.jpg
 author: "Raunak Dey"
 authors: " Sreekanth K. Manikandan, Biswajit Das, Avijit Kundu, <strong>Raunak Dey</strong>, Ayan Banerjee, and Supriya Krishnamurthy "
 venue: "Phys. Rev. Research"
