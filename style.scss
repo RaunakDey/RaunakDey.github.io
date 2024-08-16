@@ -195,3 +195,85 @@ body {
     display: block; /* Ensures the image is displayed as a block-level element */
     margin-bottom: 20px; /* Add space between image and text */
 }
+
+
+#experience {
+    padding: 20px 0;
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 80%;
+    max-width: 800px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #d8d8d8;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 10px 0;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: right;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -8px;
+    background-color: white;
+    border: 4px solid #e53c50;
+    border-radius: 50%;
+    top: 15px;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(even)::before {
+    left: -8px;
+}
+
+.timeline-date {
+    font-size: 14px;
+    color: #e53c50;
+    margin-bottom: 5px;
+}
+
+.timeline-content {
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.timeline-content p {
+    margin: 0;
+    font-size: 16px;
+}
+
