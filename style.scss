@@ -249,7 +249,7 @@ body {
 }
 
 .timeline-item:nth-child(even)::before {
-    left: -10px; /* pos of circle */
+    left: 10px; /* pos of circle */
 }
 
 .timeline-date {
