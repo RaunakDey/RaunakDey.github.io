@@ -1,0 +1,13 @@
+---
+title:  "Probing medium viscoelasticity using signal transmission through coupled harmonic oscillators*"
+date:   2021-01-01 09:26:00 +00:00
+image: /publications/images/dual-probe.jpg
+image_onhover: /publications/images/dual-back.jpg
+author: "Raunak Dey"
+authors: "Avijit Kundu, <strong>Raunak Dey</strong>, Shuvojit Paul, Ayan Banerjee"
+venue: "APS March meeting, 2021 "
+links:
+  Paper: https://meetings.aps.org/Meeting/MAR21/Session/S17.12
+  code: https://github.com/RaunakDey/two-point-hydrodynamics
+---
+A novel two-point technique to probe viscoelasticity of a media using modulated Brownian osciallators. Using two probes instead of one, creates motional resonance and provides finer insight into medium viscoelasticity.
