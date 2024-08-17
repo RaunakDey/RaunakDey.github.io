@@ -4,8 +4,8 @@ date:   2024-05-24 09:26:00 +00:00
 image: /publications/images/softmatter-front.jpg
 image_onhover: /publications/images/soft-back.jpg
 author: "Raunak Dey"
-authors: "Chandrayee Mukherjee, Avijit Kundu, strong>Raunak Dey</strong>, Ayan Banerjee, Kaushik Sengupta"
-venue: "Soft Matter, RSC. <font color='red'>Patent</font>"
+authors: "Chandrayee Mukherjee, Avijit Kundu, <strong>Raunak Dey</strong>, Ayan Banerjee, Kaushik Sengupta"
+venue: "Soft Matter, RSC; <font color='red'>Patented</font>"
 links:
   Patent: https://iprsearch.ipindia.gov.in/RQStatus/PatentCertificatePDF.aspx?AppNo=MjAyMjMxMDMwNTk0&FullPath=LVBhdGVudENlcnRpZmljYXRlMjQtMDUtMjAyNC5wZGY=
   Paper: hhttps://pubs.rsc.org/en/content/articlelanding/2021/sm/d1sm00293g
