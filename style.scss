@@ -212,12 +212,12 @@ body {
 .timeline::before {
     content: '';
     position: absolute;
-    width: 20px;
+    width: 18px;
     background-color: #d8d8d8;
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -10px;
+    margin-left: -9px;
 }
 
 .timeline-item {
