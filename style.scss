@@ -212,12 +212,12 @@ body {
 .timeline::before {
     content: '';
     position: absolute;
-    width: 25px;
+    width: 20px; /* width of line */
     background-color: #d8d8d8;
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -2px;
+    margin-left: -10px;/* pos of line */
 }
 
 .timeline-item {
@@ -240,7 +240,7 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    right: -8px;
+    right: -10px; /* pos of circle */
     background-color: white;
     border: 4px solid #e53c50;
     border-radius: 50%;
@@ -249,7 +249,7 @@ body {
 }
 
 .timeline-item:nth-child(even)::before {
-    left: -8px;
+    left: -10px; /* pos of circle */
 }
 
 .timeline-date {
