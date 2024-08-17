@@ -249,12 +249,9 @@ body {
 }
 
 .timeline-item:nth-child(even)::before {
-    left: 0px; /* pos of circle */
+    left: 10px; /* pos of circle */
 }
 
-.timeline-item:nth-child(odd)::before {
-    left: 0px; /* pos of circle */
-}
 
 .timeline-date {
     font-size: 14px;
