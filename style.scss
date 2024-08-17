@@ -252,6 +252,10 @@ body {
     left: 10px; /* pos of circle */
 }
 
+.timeline-item:nth-child(odd)::before {
+    right: 10px; /* pos of circle */
+}
+
 
 .timeline-date {
     font-size: 14px;
