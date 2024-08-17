@@ -212,12 +212,12 @@ body {
 .timeline::before {
     content: '';
     position: absolute;
-    width: 6px; /* Adjust this value to control the width */
+    width: 20px; /* Adjust this value to control the width */
     background-color: #d8d8d8;
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -3px; /* Half of the width value to center it */
+    margin-left: -10px; /* Half of the width value to center it */
 }
 
 .timeline-item {
@@ -227,13 +227,12 @@ body {
 }
 
 .timeline-item:nth-child(odd) {
-    right: 50%;
-    text-align: right; /* Align text to the right */
+    left: 0;
 }
 
 .timeline-item:nth-child(even) {
     left: 50%;
-    text-align: left; /* Align text to the left */
+    text-align: right;
 }
 
 .timeline-item::before {
