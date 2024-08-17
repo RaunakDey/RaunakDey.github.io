@@ -1,8 +1,8 @@
 ---
 title:  "Random number extraction from optically trapped Brownian oscillator using an iterative algorithm"
 date:   2021-01-31 09:26:00 +00:00
-image: /publications/images/random_front.jpg
-image_onhover: /publications/images/random_front.jpg
+image: /publications/images/presentation_random.jpg
+image_onhover: /publications/images/presentation_random.jpg
 author: "Raunak Dey"
 authors: "<strong>Raunak Dey</strong> Avijit Kundu, Subhrokoli Ghosh and Ayan Banerjee. "
 venue: "SPIE Nanoscience + Engineering, 2021, San Diego, California, United States"
