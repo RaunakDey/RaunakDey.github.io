@@ -1,0 +1,13 @@
+---
+title:  "Active microrheology using pulsed optical tweezers to probe viscoelasticity of lamin A"
+date:   2024-05-24 09:26:00 +00:00
+image: /publications/images/softmatter-front.jpg
+image_onhover: /publications/images/soft-back.jpg
+author: "Raunak Dey"
+authors: "Chandrayee Mukherjee, Avijit Kundu, strong>Raunak Dey</strong>, Ayan Banerjee, Kaushik Sengupta"
+venue: "Soft Matter, RSC. <font color='red'>Patent</font>"
+links:
+  Patent: https://iprsearch.ipindia.gov.in/RQStatus/PatentCertificatePDF.aspx?AppNo=MjAyMjMxMDMwNTk0&FullPath=LVBhdGVudENlcnRpZmljYXRlMjQtMDUtMjAyNC5wZGY=
+  Paper: hhttps://pubs.rsc.org/en/content/articlelanding/2021/sm/d1sm00293g
+---
+Designed a custom waveform to maximise SNR over a broadband and used it to perfrom microrheology on Lamin proteins. Laminopathies are driven by mutations of these Lamin proteins, where the nuclear walls disintegrates -- we studies the viscoelastic properties of such laminopathies.
