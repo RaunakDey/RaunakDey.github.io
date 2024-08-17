@@ -212,12 +212,12 @@ body {
 .timeline::before {
     content: '';
     position: absolute;
-    width: 20px; /* width of line */
+    width: 6px; /* Adjust this value to control the width */
     background-color: #d8d8d8;
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -10px;/* pos of line */
+    margin-left: -3px; /* Half of the width value to center it */
 }
 
 .timeline-item {
@@ -228,11 +228,12 @@ body {
 
 .timeline-item:nth-child(odd) {
     left: 0;
+    text-align: right; /* Align text to the right */
 }
 
 .timeline-item:nth-child(even) {
     left: 50%;
-    text-align: right;
+    text-align: left; /* Align text to the left */
 }
 
 .timeline-item::before {
@@ -240,7 +241,6 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    right: 20px; /* -10? pos of circle */
     background-color: white;
     border: 4px solid #e53c50;
     border-radius: 50%;
@@ -248,14 +248,13 @@ body {
     z-index: 1;
 }
 
-.timeline-item:nth-child(even)::before {
-    left: 10px; /* pos of circle */
-}
-
 .timeline-item:nth-child(odd)::before {
-    right: 10px; /* pos of circle */
+    right: -26px; /* Adjust this value to ensure the circle is centered on the line */
 }
 
+.timeline-item:nth-child(even)::before {
+    left: -26px; /* Adjust this value to ensure the circle is centered on the line */
+}
 
 .timeline-date {
     font-size: 14px;
