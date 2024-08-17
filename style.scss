@@ -240,7 +240,7 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    right: 200px; /* -10? pos of circle */
+    right: 20px; /* -10? pos of circle */
     background-color: white;
     border: 4px solid #e53c50;
     border-radius: 50%;
@@ -249,7 +249,7 @@ body {
 }
 
 .timeline-item:nth-child(even)::before {
-    left: 100px; /* pos of circle */
+    left: 10px; /* pos of circle */
 }
 
 .timeline-date {
