@@ -1,0 +1,13 @@
+---
+title:  "Single-shot wideband active microrheology using multiple-sinusoid modulated optical tweezers"
+date:   2021-02-02 09:26:00 +00:00
+image: /publications/images/setup.jpg
+image_onhover: /publications/images/setup.jpg
+author: "Raunak Dey"
+authors: "Avijit Kundu, <strong>Raunak Dey</strong>, Shuvojit Paul, Ayan Banerjee"
+venue: "Phys. Rev. Fluids"
+links:
+  Paper: https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.6.123301
+  code: 
+---
+An online feedback-control algorithm to maximise the Signal to Noise radio while performing broadband microrheology measurement on these stochastic probes. We improved the SNR 10x on a $10^3$ Hz bandwidth.
