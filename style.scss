@@ -288,7 +288,7 @@ body {
 }
 
 .section-title2 {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Adjusted to match the heading font size */
     margin-bottom: 40px;
     font-weight: bold;
 }
@@ -324,19 +324,20 @@ body {
 }
 
 .timeline-date2 {
-    font-size: 1.2rem;
+    font-size: 14px; /* Matching the date font size */
     font-weight: bold;
     margin-bottom: 10px;
     color: #ff6347;
 }
 
 .timeline-content2 h3 {
-    font-size: 1.5rem;
+    font-size: 18px; /* Matching the title font size */
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .timeline-content2 p {
-    font-size: 1rem;
+    font-size: 16px; /* Matching the paragraph font size */
     color: #555;
 }
 
