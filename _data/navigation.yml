@@ -14,3 +14,7 @@
   link: /
   anchor: '#experience'
   highlight: false
+- name: Awards
+  link: /
+  anchor: '#awards'
+  highlight: false
