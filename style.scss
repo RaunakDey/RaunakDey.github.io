@@ -287,7 +287,11 @@ body {
     text-align: left;
 }
 
-
+.section-title2 {
+    font-size: 1.75rem; /* Decreased the font size for "Awards & Honors" */
+    margin-bottom: 20px; /* Added a little gap below "Awards & Honors" */
+    font-weight: bold;
+}
 
 .timeline2 {
     display: flex;
@@ -349,6 +353,12 @@ body {
     text-align: left;
 }
 
+.section-title {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    /*text-align: center;*/
+}
 
 .talk-item {
     display: flex;
@@ -514,16 +524,6 @@ iframe::-webkit-scrollbar-thumb:hover {
     margin-bottom: 30px;
     font-size: 2rem;
     color: #333;
-    font-weight: bold;
-}
-
-
-.section-title2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2rem;
-    color: #333;
-    font-weight: bold;
 }
 
 .media-container {
