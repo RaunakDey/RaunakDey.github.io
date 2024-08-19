@@ -22,3 +22,7 @@
   link: /
   anchor: '#talks'
   highlight: false
+- name: Teaching
+  link: /
+  anchor: '#teaching'
+  highlight: false
