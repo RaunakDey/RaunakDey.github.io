@@ -344,3 +344,57 @@ body {
 .timeline-item2:before {
     display: none;
 }
+
+
+
+#talks {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.talk-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.talk-img {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.talk-img img {
+    max-width: 150px;
+    border-radius: 5px;
+}
+
+.talk-content {
+    max-width: calc(100% - 170px); /* Adjust based on the image width */
+}
+
+.talk-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.talk-meta {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.talk-description {
+    font-size: 1rem;
+    color: #777;
+}
