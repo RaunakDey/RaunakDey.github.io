@@ -399,3 +399,64 @@ body {
     font-size: 1rem;
     color: #777;
 }
+
+
+
+
+
+#teaching {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.teaching-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    flex-direction: row-reverse; /* Reverses the direction to place the image on the right */
+}
+
+.teaching-img {
+    flex-shrink: 0;
+    margin-left: 20px; /* Adjusted to match the new direction */
+}
+
+.teaching-img img {
+    max-width: 150px;
+    border-radius: 5px;
+}
+
+.teaching-content {
+    max-width: calc(100% - 170px); /* Adjust based on the image width */
+}
+
+.teaching-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.teaching-meta {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.teaching-meta a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.teaching-meta a:hover {
+    text-decoration: underline;
+}
+
+.teaching-description {
+    font-size: 1rem;
+    color: #777;
+}
+
