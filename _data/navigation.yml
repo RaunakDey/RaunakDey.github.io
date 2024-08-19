@@ -18,3 +18,7 @@
   link: /
   anchor: '#awards'
   highlight: false
+- name: Talks
+  link: /
+  anchor: '#talks'
+  highlight: false
