@@ -468,7 +468,7 @@ body {
 /* media */
 
 
-
+/*
 .media-container {
     width: 90%;
     max-width: 1200px;
@@ -517,4 +517,26 @@ iframe::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
 
+*/
+
+
+.media-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between iframes */
+}
+
+.media-frame {
+    width: 48%; /* Adjust width as needed to fit within the container */
+    overflow: hidden;
+    border: 1px solid #ccc; /* Optional: Add a border around the iframe */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.media-frame iframe {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    border: none; /* Remove the iframe border */
+}
 
