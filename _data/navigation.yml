@@ -26,3 +26,8 @@
   link: /
   anchor: '#teaching'
   highlight: false
+- name: Media
+  link: /
+  anchor: '#media'
+  highlight: false
+  
