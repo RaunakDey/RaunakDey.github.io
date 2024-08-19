@@ -416,12 +416,13 @@ body {
     margin-bottom: 40px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
-    flex-direction: row-reverse; /* Reverses the direction to place the image on the right */
+    flex-direction: row-reverse; /* Image on the right */
+    gap: 20px; /* Adds space between the image and text */
 }
 
 .teaching-img {
     flex-shrink: 0;
-    margin-left: 20px; /* Adjusted to match the new direction */
+    margin-left: 20px; /* Adds space to the right of the image */
 }
 
 .teaching-img img {
@@ -434,8 +435,8 @@ body {
 }
 
 .teaching-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
+    font-size: 1.8rem;
+    margin-bottom: 10px; /* Adds space below the heading */
     font-weight: bold;
 }
 
@@ -459,4 +460,3 @@ body {
     font-size: 1rem;
     color: #777;
 }
-
