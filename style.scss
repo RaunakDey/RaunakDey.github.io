@@ -347,6 +347,9 @@ body {
 
 
 
+
+
+/* Talks Section */
 #talks {
     background-color: #ffffff;
     padding: 50px 20px;
@@ -357,7 +360,6 @@ body {
     font-size: 1.75rem;
     margin-bottom: 20px;
     font-weight: bold;
-    /*text-align: center;*/
 }
 
 .talk-item {
@@ -379,7 +381,7 @@ body {
 }
 
 .talk-content {
-    max-width: calc(100% - 170px); /* Adjust based on the image width */
+    max-width: calc(100% - 170px);
 }
 
 .talk-content h3 {
@@ -400,10 +402,7 @@ body {
     color: #777;
 }
 
-
-
-
-
+/* Teaching Section */
 #teaching {
     background-color: #ffffff;
     padding: 50px 20px;
@@ -416,13 +415,10 @@ body {
     margin-bottom: 40px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
-    /* flex-direction: row-reverse; /* Image on the right */
-    /* gap: 20px; /* Adds space between the image and text */
 }
 
 .teaching-img {
     flex-shrink: 0;
-    /*  margin-left: 20px;  Adds space to the right of the image */
     margin-right: 20px;
 }
 
@@ -432,12 +428,12 @@ body {
 }
 
 .teaching-content {
-    max-width: calc(100% - 170px); /* Adjust based on the image width */
+    max-width: calc(100% - 170px);
 }
 
 .teaching-content h3 {
     font-size: 1.8rem;
-    margin-bottom: 10px; /* Adds space below the heading */
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
@@ -462,63 +458,7 @@ body {
     color: #777;
 }
 
-
-
-
-/* media */
-
-
-/*
-.media-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2rem;
-    color: #333;
-}
-
-.media-frame {
-    margin-bottom: 20px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.media-frame iframe {
-    width: 100%;
-    height: 500px;
-    border: none;
-    overflow-y: scroll;
-}
-
-@media (max-width: 768px) {
-    .media-frame iframe {
-        height: 400px;
-    }
-}
-
-
-iframe::-webkit-scrollbar {
-    width: 10px;
-}
-
-iframe::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 10px;
-}
-
-iframe::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-}
-
-*/
-
+/* Media Section */
 .section-title {
     text-align: center;
     margin-bottom: 30px;
@@ -529,20 +469,49 @@ iframe::-webkit-scrollbar-thumb:hover {
 .media-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Space between iframes */
+    gap: 20px;
 }
 
 .media-frame {
-    width: 48%; /* Adjust width as needed to fit within the container */
+    width: 48%;
     overflow: hidden;
-    border: 1px solid #ccc; /* Optional: Add a border around the iframe */
-    border-radius: 5px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .media-frame iframe {
     width: 100%;
-    height: 100%; /* Adjust height as needed */
-    border: none; /* Remove the iframe border */
+    height: 100%;
+    border: none;
 }
 
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .talk-item,
+    .teaching-item {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center content for a more balanced look */
+        text-align: center; /* Center the text */
+    }
+
+    .talk-img,
+    .teaching-img {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .talk-content,
+    .teaching-content {
+        max-width: 100%; /* Make text container full-width */
+    }
+
+    .media-container {
+        flex-direction: column; /* Stack iframes vertically */
+    }
+
+    .media-frame {
+        width: 100%; /* Make iframes full-width */
+        margin-bottom: 20px; /* Add space below each iframe */
+    }
+}
