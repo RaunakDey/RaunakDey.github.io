@@ -10,4 +10,4 @@ links:
   Patent: https://iprsearch.ipindia.gov.in/RQStatus/PatentCertificatePDF.aspx?AppNo=MjAyMjMxMDMwNTk0&FullPath=LVBhdGVudENlcnRpZmljYXRlMjQtMDUtMjAyNC5wZGY=
   Paper: hhttps://pubs.rsc.org/en/content/articlelanding/2021/sm/d1sm00293g
 ---
-Designed a custom waveform to maximise SNR over a broadband and used it to perfrom microrheology on Lamin proteins. Laminopathies are driven by mutations of these Lamin proteins, where the nuclear walls disintegrates -- we studies the viscoelastic properties of such laminopathies.
+Designed a custom waveform to maximise Signal to Noise ratio over a broadband and used it to perform microrheology on Lamin proteins. Laminopathies are driven by mutations of these Lamin proteins. With some mutations the nuclear walls disintegrates. Our patented method can be used to quickly and accurately measure the live viscoelastic properties of such proteins in solution or <i>in vitro</i>. 
