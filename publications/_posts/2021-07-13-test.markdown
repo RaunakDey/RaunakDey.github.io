@@ -10,4 +10,4 @@ links:
   paper: https://journals.aps.org/pre/pdf/10.1103/PhysRevE.106.054113
   arxiv: https://arxiv.org/pdf/2104.00127
 ---
-Build a numerical framework to analyze stochastic trajectories of Brownian particles and showed that their thermodyanmic currents follow arcsine distributions.
+Build a numerical framework to analyze stochastic trajectories of Brownian particles and showed that their thermodynamic currents follow the 3 Levy arcsine laws.
