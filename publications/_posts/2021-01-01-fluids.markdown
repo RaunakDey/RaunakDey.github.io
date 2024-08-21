@@ -8,6 +8,6 @@ authors: "Avijit Kundu, <strong>Raunak Dey</strong>, Shuvojit Paul, Ayan Banerje
 venue: "Phys. Rev. Fluids"
 links:
   Paper: https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.6.123301
-  code: 
+  arXiv: https://arxiv.org/abs/2103.04093
 ---
 An online feedback-control algorithm to maximise the Signal to Noise radio while performing broadband microrheology measurement on these stochastic probes. We improved the SNR 10x on a $10^3$ Hz bandwidth.
