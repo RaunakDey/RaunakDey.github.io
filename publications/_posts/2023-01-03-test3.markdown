@@ -10,4 +10,4 @@ links:
   code: https://github.com/RaunakDey/Time-series-iterative-
   PDF: https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2020.576948/pdf?isPublishedV2=false
 ---
-Used an iterative ML based algorithm integrated with NIST tests for randomness suite to characterize how much random are experimentally smapled tracjetories of Brownian particles. Demonstrated a method to obtain real-random numbers instead of algorithmitcally generated pseudo-randoms.
+Developed an optimization algorithm integrated with NIST tests for randomness suite to characterize how random are experimentally sampled tracjetories of Brownian particles. Our inverse model extracts real-random numbers from stochastic trajectories instead of algorithmitcally generated pseudo-randoms. Demonstrated on the experimentally measured trajectories of an optically trapped Brownian particle in water.
