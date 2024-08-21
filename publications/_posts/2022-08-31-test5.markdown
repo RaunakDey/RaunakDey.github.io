@@ -8,5 +8,6 @@ authors: " Sreekanth K. Manikandan, Biswajit Das, Avijit Kundu, <strong>Raunak D
 venue: "Phys. Rev. Research"
 links:
   Paper: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.043067
+  arXiv: https://arxiv.org/abs/2201.06563
 ---
 Developed a feed-forward neural network to discover best basis function to compute thermodynamic currents of a Brownian particle moving in water. (A constrained non-convex optimization problem.) Showed how the skewness properties change over time.
