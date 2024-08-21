@@ -10,4 +10,4 @@ links:
   Paper: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.043067
   arXiv: https://arxiv.org/abs/2201.06563
 ---
-Developed a feed-forward neural network to discover best basis function to compute thermodynamic currents of a Brownian particle moving in water. (A constrained non-convex optimization problem.) Showed how the skewness properties change over time.
+Using a feed-forward neural network, we fit the best basis function to compute thermodynamic currents of a Brownian particle in water (a constrained non-convex optimization problem.) Showed how the skewness properties of these stochastic currents change non-mononotically over time.
