@@ -8,6 +8,5 @@ authors: " Sreekanth K. Manikandan, Biswajit Das, Avijit Kundu, <strong>Raunak D
 venue: "Phys. Rev. Research"
 links:
   Paper: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.043067
-  code: https://github.com/RaunakDey/Time-series-iterative-
 ---
 Developed a feed-forward neural network to discover best basis function to compute thermodynamic currents of a Brownian particle moving in water. (A constrained non-convex optimization problem.) Showed how the skewness properties change over time.
