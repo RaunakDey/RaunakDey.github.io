@@ -10,4 +10,4 @@ links:
   Presentation+Paper: https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11798/117980F/Random-number-extraction-from-optically-trapped-Brownian-oscillator-using-an/10.1117/12.2596502.short
   code: https://github.com/RaunakDey/Time-series-iterative-
 ---
-A class of Machine Learning algorithms to extract random numbers from dampled driven Physics based stochastic time series. Demonstrated through an Ornstein-Uhlenbeck process with 3 different potential functions.
+Developed a class of Machine Learning algorithms to extract random numbers from dampled driven Physics based stochastic time series. Demonstrated through an Ornstein-Uhlenbeck process with 3 different potential functions.
