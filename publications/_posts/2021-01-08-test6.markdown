@@ -9,4 +9,4 @@ venue: "SPIE Nanoscience + Engineering, 2021, San Diego, California, United Stat
 links:
   Presentation+Paper: https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11798/117980D/Microrheology-over-a-broad-frequency-range-probing-multiple-sinusoid-oscillating/10.1117/12.2596296.short
 ---
-Algorithmically optimizing the Signal to Noise ratio for wideband active microrheology.
+Invented a technique for algorithmically optimizing the signal to noise ratio (SNR) for wideband active microrheology.
