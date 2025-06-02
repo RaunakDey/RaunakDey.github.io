@@ -1,0 +1,11 @@
+---
+title:  "Emergent higher-order interactions enable coexistence in phage-bacteria community dynamics"
+date:   2025-05-16 09:26:00 +00:00
+image: /publications/images/phage_front.png
+image_onhover: /publications/images/phage_front.png
+author: "Raunak Dey"
+authors: "<strong>Raunak Dey</strong>, Ashley Coenen, Nalatie Solonenko, Marie Burris, Anna Mackey, Julia Galasso, Christine Sun, David Demory, Daniel Muratore, Stephen Beckett, Matthew Sullivan, Joshua Weitz"
+venue: "<i>In Review</i>"
+links:
+  Arxiv: https://www.biorxiv.org/content/10.1101/2025.05.15.651590v1
+---
