@@ -138,6 +138,41 @@ span.highlight {
   align-items: center;
 }
 
+// Socials
+.social-links {
+  padding-left: 0;
+  margin: 0;
+}
+
+.social-links li {
+  margin: 10px 15px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.social-link i {
+  font-size: 1.25rem;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+}
+
+.social-link:hover {
+  color: #007bff;
+}
+
+.social-link:hover i {
+  transform: scale(1.2);
+}
+
+
+
 // Website specific
 
 #portrait {
