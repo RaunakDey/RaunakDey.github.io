@@ -550,6 +550,13 @@ body {
     text-align: left;
 }
 
+#teaching h2.section-title {
+    font-size: 2.5rem;       /* Bigger title */
+    text-align: center;      /* Centered */
+    margin-bottom: 40px;     /* Spacing below title */
+    font-weight: 700;        /* Optional: bolder look */
+}
+
 .teaching-item {
     display: flex;
     align-items: flex-start;
