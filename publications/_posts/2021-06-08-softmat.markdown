@@ -8,7 +8,7 @@ authors: "Chandrayee Mukherjee, Kaushik Sengupta, Avijit Kundu, <strong>Raunak D
 venue: "The Patent Office, Government of India <font color='red'>Patented</font>"
 links:
   Paper: https://doi.org/10.1039/D1SM00293G
-  ---
+---
 Used our optimal control algorithm to maximise the broadband SNR for microrheology experiments on Lamin proteins.
 Laminopathies, such as cardiomyopathy are driven by mutations of these Lamin proteins. With some mutations the nuclear walls disintegrates.
 That changes the viscoelastic properties of the cell. However, we found out that even before the cell disintegrates, the protein
