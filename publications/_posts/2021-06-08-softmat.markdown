@@ -5,7 +5,7 @@ image: /publications/images/softmatter-front.jpg
 image_onhover: /publications/images/soft-back.jpg
 author: "Raunak Dey"
 authors: "Chandrayee Mukherjee, Kaushik Sengupta, Avijit Kundu, <strong>Raunak Dey</strong>, Ayan Banerjee"
-venue: "The Patent Office, Government of India <font color='red'>Patented</font>"
+venue: "Soft Matter, Royal Society of Chemistry"
 links:
   Paper: https://doi.org/10.1039/D1SM00293G
 ---
