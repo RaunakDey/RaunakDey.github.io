@@ -101,17 +101,17 @@ span.highlight {
 
 
 .cool-card {
-  background: #fff;
+  background: #ffffff;
   border-radius: 16px;
   padding: 25px 20px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
 
 .cool-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
 
 .icon-circle {
@@ -124,10 +124,18 @@ span.highlight {
 }
 
 .styled-list {
-  padding-left: 1.2rem;
-  list-style-type: disc;
-  font-size: 0.95rem;
-  margin-bottom: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 300px;
+}
+
+.styled-list li {
+  margin: 12px 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 // Website specific
