@@ -8,42 +8,77 @@
             <!-- Tabs Navigation -->
             <ul class="nav nav-pills flex-wrap mb-3" id="research-tabs" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#topic1" type="button" role="tab">Inference in Virus-Microbe Networks</button>
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#topic1" type="button" role="tab">Biostatistics of viral infections</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic2" type="button" role="tab">Latent Space Engineering</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic2" type="button" role="tab">Optimal control for robotics and sensing
+                    </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic3" type="button" role="tab">LLM & Time Series</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic3" type="button" role="tab"> LLMs and GenAI for time series</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic4" type="button" role="tab">Stochastic Time Series</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic5" type="button" role="tab">Control & Microrheology</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic5" type="button" role="tab"> Instrumentation engineering for Optics</button>
                 </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic6" type="button" role="tab"> Software pipelines for radio astronomy</button>
+                </li>
+
             </ul>
 
             <!-- Tabs Content -->
             <div class="tab-content text-justify">
                 <div class="tab-pane fade show active" id="topic1" role="tabpanel">
-                    <p><strong>Inference in virus-microbe networks:</strong> In nature, multiple species of viruses and their microbial hosts can coexist, either completely or partially. To understand human health or environmental outcomes of these complex networks, it is necessary to have a physical model, infer who interacts with whom, and determine their life-history traits. I focus on building inverse models on population time series datasets using Bayesian approaches. When antibiotics, phage cocktails, and multiple strains of microbes are present together, I work on identifying the optimal course of treatment using these models. Additionally, in natural or lab experiments, I study how emergent effects and higher-order interactions can influence community outcomes. I employ a range of techniques, such as multimodal machine learning, network theory, and Markov Chain Monte Carlo (MCMC) approaches, to understand these application-driven virus-microbe infection networks and microbe-microbe interaction networks.</p>
+                <p><strong>Phage Therapy:</strong> Some viruses (phages) can infect and kill bacterial cells, and are hence used for treating resistant infections. We design pharmacological models of phage therapy using phage cocktails and antibiotics. Aided by HFIM data, we use inverse models to inform such infection treatment models and ask the question: is combination therapy better than single therapy? what is the optimal timing and dosage of such treatments? 
+                </p>
+                 <p><strong> Network of community infections:</strong> In natural ecosystems, multiple species of phages coexist with their bacterial hosts. From observed population dynamics data, we address the question: which phage infects which microbes? Which microbial groups cooperate vs compete? How to infer underlying traits from the observed population dynamics? How different are pairwise interactions from community interactions? How are the populations stabilized in a natural ecosystem? We use ODEs and interaction models to parametrize these systems and constrained optimization techniques to solve inverse problems in these complex systems.
+                 </p>   
+                
                 </div>
 
                 <div class="tab-pane fade" id="topic2" role="tabpanel">
-                    <p><strong>Latent space engineering:</strong> In inverse models, inferring the parameters alone can provide a partial representation. I focus on latent space engineering, which reduces a probabilistic program in lower dimensions to a deterministic program in higher dimensions by engineering appropriate learnable latent space representations. I use these techniques to create ordinary differential equations (ODE) analogs of Bayesian virus-microbe models with hyperpriors, model the heterogeneity of population data, and model hidden latent variables for causal inference.</p>
+                    <p><strong>Optimal sensing via microrheology:</strong>  In experiments guided with Optical Tweezers, a submicroscopic probe is embedded in complex non-Newtonian fluid. From the observed motion of the microscopic probe, the rheological properties of the fluid can be determined. We design(ed) optimal control algorithms to optimize the signal-to-noise ratio in wideband response measurements, such that they remain in a linear-response regime. Our constrained optimization algorithm outperforms standard techniques in terms of speed and accuracy, which is essential for time-sensitive experiments with biological media. We have used these to study how viscoelastic properties of mutated Lamin differ from the wild type, a mutation linked to cardiomyopathy. 
+                    </p>
+                    <p><strong>Sequential Bayesian localization of acoustic emitter via mobile drone:</strong>  Drones are widely used in search and rescue. Through numerical simulations, we devised a sequential Bayesian framework, for optimally moving a receiver drone to localize an acoustic emitter. The drone uses phase difference of arrival from the source at different time intervals, and each step identifies a posterior for possible location; then it computes where to optimally move. (Hint: moving directly towards the source is not optimal.)
+                    </p>
                 </div>
 
                 <div class="tab-pane fade" id="topic3" role="tabpanel">
-                    <p><strong>LLM and time series:</strong> The strong inductive bias of large language models (LLMs) can be leveraged to forecast time series in an autoregressive manner through intelligent prompt engineering or tokenization schemes. However, the biggest challenges include limitations of context windows, lack of explainable features, and subpar performance in real dynamical systems. I integrate Physics approaches into LLM-driven time series forecasting to better understand the granular features of these emerging LLM forecasters.</p>
+                <p><strong>LLM-based time series forecasting:</strong>  LLMs being trained on large datasets have reliable autoregressive next-word prediction capabilities. Tokenizers are being developed where numbers are mapped to tokens and solving the next token estimation problems with pre-trained LLMs solves the next number prediction problem for time series. For different LLMs and tokenizations, we investigate how zero-shot or few-shot learning is effective for chaotic and stochastic systems (Hint: it is not!).
+                </p>    
+                <p><strong>Gen-AI for time series extrapolation:</strong> Gen-AI models such as VAE, GAN, and diffusion models are excellent in approximating the underlying probability distributions from samples. For physics-derived dynamical systems, we explore Gen-AI models for predictive tasks for undersampled data and sparse time series. 
+                </p>  
                 </div>
 
                 <div class="tab-pane fade" id="topic4" role="tabpanel">
-                    <p><strong>Stochastic time series:</strong> I explore novel methods to calibrate stochastic time series. One such approach involves extracting random numbers from these processes to maximize their randomness entropies. These algorithms can serve two purposes: extracting "true random numbers," as opposed to computer-generated "pseudo-random numbers," and fully characterizing a stochastic trajectory, such as multivariate Ornstein-Uhlenbeck processes.</p>
-                </div>
+                    <p><strong>Real random numbers from Brownian trajectories:</strong> 
+                        Algorithms for random number generation produce pseudo-random numbers. Through experimental trajectories of Brownian probes captured via our optical tweezers setup, we developed random number extraction algorithms, based on NIST tests for randomness. We found that the entropy of randomness improves asymptotically as the sampling rate increases. 
+                    </p>
+                    <p>
+                    <strong>Non-equilibrium statistical mechanics:</strong>  We study energy dissipation and thermodynamic currents driving stochastic probes in fluids. With experimentally recorded Brownian trajectories, we discovered how these currents converge to an arcsine distribution, and how they have directional preference depending on the timescale of observation. 
+                    </p>
+                    </div>
 
                 <div class="tab-pane fade" id="topic5" role="tabpanel">
-                    <p><strong>Control and optimization in microrheology:</strong> Active microrheology involves using microscopic probes that can be controlled to probe the viscoelastic properties of non-Newtonian fluids. Using a custom waveform where we can tune the input phases, amplitudes, and frequencies of multiple added sine waves, depending on the probe's response, allows us to optimize for a given wideband frequency range. This method has proven to be fast, reliable, and accurate (patented). This technique can be used to study complex fluids and proteins in solution or in vitro.</p>
+                    <p>
+                        <strong>Optical Tweezers:</strong> A collimated beam of laser when focused by a high numerical aperture lens can capture microscopic probes, such that they can be moved along with the laser beam. At the Light-Matter Lab (IISER Kolkata), I developed custom-built optical tweezers and imaging systems for the simultaneous capture of multiple sub-microscopic particles; along with modulation and tracking with nanometer resolution.  
+                    </p>
+                    <p>
+                        <strong>Quantum Spectroscopy:</strong> Entangled photons interacting with matter have their properties altered due to light-matter interactions. At the Silva Lab (Georgia Tech), I worked on building time-synchronized dual single-photon detection systems, for quantum metrology with these entangled photon pairs.
+                    </p>
+                    <p>
+                        <strong>Microscopy and imaging:</strong> At UBCO Canada, I build a custom microscope with two high numerical aperture lenses and 3D motor controls enabled by gaming joysticks.
+                    </p>
+                </div>
+
+                <div class="tab-pane fade" id="topic6" role="tabpanel">
+                    <p>
+                        GMRT (Giant Meterwave Radio Telescope) in India, employs up to 33 radio telescope dishes to image pulsars (rapidly rotating neutron stars that emit beams of electromagnetic radiation). Due to RFID, these frames (lasting only a few seconds have low SNR). Using multi-detector observations and stacking, we developed a pipeline to filter RDIF corrupt data for radio frequency observation. 
+                    </p>
                 </div>
             </div>
         </div>
