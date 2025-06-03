@@ -1,0 +1,15 @@
+---
+title:  "Active microrheology using pulsed optical tweezers to probe viscoelasticity of lamin A"
+date:   2021-06-08 09:26:00 +00:00
+image: /publications/images/softmatter-front.jpg
+image_onhover: /publications/images/soft-back.jpg
+author: "Raunak Dey"
+authors: "Chandrayee Mukherjee, Kaushik Sengupta, Avijit Kundu, <strong>Raunak Dey</strong>, Ayan Banerjee"
+venue: "The Patent Office, Government of India <font color='red'>Patented</font>"
+links:
+  Paper: https://doi.org/10.1039/D1SM00293G
+  ---
+Used our optimal control algorithm to maximise the broadband SNR for microrheology experiments on Lamin proteins.
+Laminopathies, such as cardiomyopathy are driven by mutations of these Lamin proteins. With some mutations the nuclear walls disintegrates.
+That changes the viscoelastic properties of the cell. However, we found out that even before the cell disintegrates, the protein
+in solution exhibits different viscoelastic properties, thereby aiding into fast detection.
