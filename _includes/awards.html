@@ -1,5 +1,24 @@
 {% assign publication_posts = site.posts | contains: 'categories', 'publications' %}
 
+
+
+<div id="awards" class="container py-5">
+  <h2 class="text-center mb-5">Awards & Honors</h2>
+  <div class="row g-4">
+    {% assign awards = site.data.awards %}
+    {% for award in awards %}
+    <div class="col-md-6 col-lg-4">
+      <div class="award-card h-100">
+        <div class="award-year">{{ award.year }}</div>
+        <h5 class="award-title">{{ award.title }}</h5>
+        <p class="award-organization">{{ award.org }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!--
 <div id="awards" class="container py-5">
     <h2 class="col-md-12">Awards & Honors</h2>
   
@@ -74,3 +93,4 @@
       
     </div>
 </div>
+-->
