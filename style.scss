@@ -184,18 +184,50 @@ body {
 }
 
 
-.research-section {
-    background-color: #ffffff; /* Light background color */
+/*.research-section {
+    background-color: #ffffff; 
     padding: 20px;
 }
 
 .research-image {
-    width: 100%; /* Make the image fill the container width */
-    height: auto; /* Adjust height to maintain aspect ratio */
-    display: block; /* Ensures the image is displayed as a block-level element */
-    margin-bottom: 20px; /* Add space between image and text */
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin-bottom: 20px; 
+}
+*/
+
+.research-section {
+    background-color: #f8f9fa;
 }
 
+.card {
+    border-radius: 1rem;
+    background-color: #ffffff;
+}
+
+.nav-pills .nav-link {
+    border-radius: 20px;
+    margin: 4px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.research-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
 
 #experience {
     padding: 20px 0;
