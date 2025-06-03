@@ -1,56 +1,50 @@
 {% assign publication_posts = site.posts | contains: 'categories', 'publications' %}
+<div class="research-section py-5" id="research">
+    <div class="container">
+        <div class="card shadow rounded p-4">
+            <h2 class="mb-4">Research</h2>
+            <img src="images/research-webpage.png" alt="Research Image" class="research-image mb-4">
 
-<div class="research-section py-4" id="research">
-    <div class="container"  >
-        <div class="row">
-            <div class="col-md-12">
-               
-                <h2>Research</h2>
-                
-                <img src="images/research-webpage.png" alt="Research Image" class="research-image">
-                
-                 <p style="text-align:justify">
-                    <!-- Add your research description here. -->
-                     My area of expertise is in Physics and Deep Learning. I study complex systems using methods from dynamical systems, controls, and optimization.
-                     These quantitative approaches are broadly applicable to different types of complex systems in Biology, Data Science, Physics, and Finance. Here are a few topics I have focused on in recent years:
-                   <br>
-                 </p>
-                 <p style="text-align:justify">
-                    1. <strong> Inference in virus-microbe networks:</strong> In nature, multiple species of viruses and their microbial hosts can coexist, 
-                     either completely or partially. To understand human health or environmental outcomes of these complex networks, it is necessary to have a physical model,
-                     infer who interacts with whom, and determine their life-history traits. I focus on building inverse models on population time series datasets using Bayesian approaches.
-                     When antibiotics, phage cocktails, and multiple strains of microbes are present together, I work on identifying the optimal course of treatment using these models.
-                     Additionally, in natural or lab experiments, I study how emergent effects and higher-order interactions can influence community outcomes. I employ a range of techniques,
-                     such as multimodal machine learning, network theory, 
-                     and Markov Chian Monte Carlo (MCMC) approaches, to understand these application-driven virus-microbe infection networks and microbe-microbe interaction networks. <br>
-                </p>
+            <!-- Tabs Navigation -->
+            <ul class="nav nav-pills flex-wrap mb-3" id="research-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#topic1" type="button" role="tab">Inference in Virus-Microbe Networks</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic2" type="button" role="tab">Latent Space Engineering</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic3" type="button" role="tab">LLM & Time Series</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic4" type="button" role="tab">Stochastic Time Series</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic5" type="button" role="tab">Control & Microrheology</button>
+                </li>
+            </ul>
 
-                 <p style="text-align:justify">
-                    2. <strong>Latent space engineering:</strong> In inverse models, inferring the parameters alone can provide a partial representation.
-                     I focus on latent space engineering, which reduces a probabilistic program in lower dimensions to a deterministic program in higher
-                     dimensions by engineering appropriate learnable latent space representations. I use these techniques to create ordinary differential equations (ODE) analogs of 
-                     Bayesian virus-microbe models with hyperpriors, model the heterogeneity of population data, and model hidden latent variables for causal inference.
-                 </p>
+            <!-- Tabs Content -->
+            <div class="tab-content text-justify">
+                <div class="tab-pane fade show active" id="topic1" role="tabpanel">
+                    <p><strong>Inference in virus-microbe networks:</strong> In nature, multiple species of viruses and their microbial hosts can coexist, either completely or partially. To understand human health or environmental outcomes of these complex networks, it is necessary to have a physical model, infer who interacts with whom, and determine their life-history traits. I focus on building inverse models on population time series datasets using Bayesian approaches. When antibiotics, phage cocktails, and multiple strains of microbes are present together, I work on identifying the optimal course of treatment using these models. Additionally, in natural or lab experiments, I study how emergent effects and higher-order interactions can influence community outcomes. I employ a range of techniques, such as multimodal machine learning, network theory, and Markov Chain Monte Carlo (MCMC) approaches, to understand these application-driven virus-microbe infection networks and microbe-microbe interaction networks.</p>
+                </div>
 
-                
-                 <p style="text-align:justify">
-                    3. <strong>LLM and time series:</strong> The strong inductive bias of large language models (LLMs) can be leveraged to forecast time series 
-                     in an autoregressive manner through intelligent prompt engineering or tokenization schemes. However, the biggest challenges include limitations of context windows, 
-                     lack of explainable features, and subpar performance in real dynamical systems.
-                     I integrate Physics approaches into LLM-driven time series forecasting to better understand the granular features of these emerging LLM forecasters.<br>
-                </p>
-                 <p style="text-align:justify">
-                    4. <strong>Stochastic time series:</strong> I explore novel methods to calibrate stochastic time series.
-                     One such approach involves extracting random numbers from these processes to maximize their randomness entropies.
-                     These algorithms can serve two purposes: extracting "true random numbers," as opposed to computer-generated "pseudo-random numbers," 
-                     and fully characterizing a stochastic trajectory, such as multivariate Ornstein-Uhlenbeck processes.
-                     </p>
-                 <p style="text-align:justify">
-                    5. <strong>Control and optmization in microrheology: </strong> Active microrheology involves using microscopic probes that can be controlled to probe the viscoelastic properties
-                     of non-Newtonian fluids. Using a custom waveform where we can tune the input phases, amplitudes, and frequencies of multiple added sine waves, 
-                     depending on the probe's response, allows us to optimize for a given wideband frequency range. This method has proven to be fast, reliable, and accurate (patented). 
-                     This technique can be used to study complex fluids and proteins in solution or in vitro.<br>
-                </p>
+                <div class="tab-pane fade" id="topic2" role="tabpanel">
+                    <p><strong>Latent space engineering:</strong> In inverse models, inferring the parameters alone can provide a partial representation. I focus on latent space engineering, which reduces a probabilistic program in lower dimensions to a deterministic program in higher dimensions by engineering appropriate learnable latent space representations. I use these techniques to create ordinary differential equations (ODE) analogs of Bayesian virus-microbe models with hyperpriors, model the heterogeneity of population data, and model hidden latent variables for causal inference.</p>
+                </div>
+
+                <div class="tab-pane fade" id="topic3" role="tabpanel">
+                    <p><strong>LLM and time series:</strong> The strong inductive bias of large language models (LLMs) can be leveraged to forecast time series in an autoregressive manner through intelligent prompt engineering or tokenization schemes. However, the biggest challenges include limitations of context windows, lack of explainable features, and subpar performance in real dynamical systems. I integrate Physics approaches into LLM-driven time series forecasting to better understand the granular features of these emerging LLM forecasters.</p>
+                </div>
+
+                <div class="tab-pane fade" id="topic4" role="tabpanel">
+                    <p><strong>Stochastic time series:</strong> I explore novel methods to calibrate stochastic time series. One such approach involves extracting random numbers from these processes to maximize their randomness entropies. These algorithms can serve two purposes: extracting "true random numbers," as opposed to computer-generated "pseudo-random numbers," and fully characterizing a stochastic trajectory, such as multivariate Ornstein-Uhlenbeck processes.</p>
+                </div>
+
+                <div class="tab-pane fade" id="topic5" role="tabpanel">
+                    <p><strong>Control and optimization in microrheology:</strong> Active microrheology involves using microscopic probes that can be controlled to probe the viscoelastic properties of non-Newtonian fluids. Using a custom waveform where we can tune the input phases, amplitudes, and frequencies of multiple added sine waves, depending on the probe's response, allows us to optimize for a given wideband frequency range. This method has proven to be fast, reliable, and accurate (patented). This technique can be used to study complex fluids and proteins in solution or in vitro.</p>
+                </div>
             </div>
         </div>
     </div>
