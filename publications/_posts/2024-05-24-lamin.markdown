@@ -1,8 +1,8 @@
 ---
 title:  "A system for carrying out active microrheology to probe viscoelasticity of protein"
 date:   2024-05-24 09:26:00 +00:00
-image: /publications/images/softmatter-front.jpg
-image_onhover: /publications/images/soft-back.jpg
+image: /publications/images/patent.png
+image_onhover: /publications/images/patent.png
 author: "Raunak Dey"
 authors: "Kaushik Sengupta, Chandrayee Mukherjee, Avijit Kundu, <strong>Raunak Dey</strong>, Shuvojit Paul, Ayan Banerjee"
 venue: "The Patent Office, Government of India <font color='red'>Patented</font>"
