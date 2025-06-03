@@ -100,17 +100,35 @@ span.highlight {
 }
 
 
-.card-title {
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #333;
+.cool-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
 }
 
-.card ul li {
-    margin-bottom: 0.5rem;
-    font-family: 'Georgia', serif; /* Optional serif touch */
+.cool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
 
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.styled-list {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
 
 // Website specific
 
