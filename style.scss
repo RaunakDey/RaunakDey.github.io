@@ -55,14 +55,16 @@ strong {
   font-weight: bold;
 }
 
+
+
 h2 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 1.75rem;
   font-display: auto;
   font-weight: normal;
   padding: 0px;
-  margin: 0px;
-  display:inline; 
+  margin: 0px 0px 10px 0px; /* Adds 10px bottom margin */
+  display: block; /* Changed from inline */
 }
 
 h3 {
