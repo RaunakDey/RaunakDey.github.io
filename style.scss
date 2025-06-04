@@ -224,6 +224,13 @@ body {
 
 // Publications
 
+#publication h2.section-title {
+  font-size: 2.0rem;       /* Bigger title */
+  text-align: center;      /* Centered */
+  margin-bottom: 40px;     /* Spacing below title */
+  font-weight: 700;        /* Optional: bolder look */
+}
+
 .publication {
   .authors {
     a {
@@ -307,6 +314,13 @@ body {
 
 #experience {
     padding: 20px 0;
+}
+
+#experience h2.section-title {
+  font-size: 2.0 rem;       /* Bigger title */
+  text-align: center;      /* Centered */
+  margin-bottom: 40px;     /* Spacing below title */
+  font-weight: 700;        /* Optional: bolder look */
 }
 
 .timeline {
@@ -397,6 +411,13 @@ body {
     background-color: #ffffff;
     padding: 50px 20px;
     text-align: left;
+}
+
+#awards h2.section-title {
+  font-size: 2.0rem;       /* Bigger title */
+  text-align: center;      /* Centered */
+  margin-bottom: 40px;     /* Spacing below title */
+  font-weight: 700;        /* Optional: bolder look */
 }
 
 .section-title2 {
@@ -552,12 +573,30 @@ body {
     text-align: left;
 }
 
+
+
 #teaching h2.section-title {
-    font-size: 2.5rem;       /* Bigger title */
+    font-size: 2.0rem;       /* Bigger title */
     text-align: center;      /* Centered */
     margin-bottom: 40px;     /* Spacing below title */
     font-weight: 700;        /* Optional: bolder look */
 }
+
+
+#talks h2.section-title {
+  font-size: 2.0rem;       /* Bigger title */
+  text-align: center;      /* Centered */
+  margin-bottom: 40px;     /* Spacing below title */
+  font-weight: 700;        /* Optional: bolder look */
+}
+
+#media h2.section-title {
+  font-size: 2.0rem;       /* Bigger title */
+  text-align: center;      /* Centered */
+  margin-bottom: 40px;     /* Spacing below title */
+  font-weight: 700;        /* Optional: bolder look */
+}
+
 
 .teaching-item {
     display: flex;
