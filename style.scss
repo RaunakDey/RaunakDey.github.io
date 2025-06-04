@@ -714,10 +714,14 @@ body {
 }
 
 
-
 #description {
-    font-size: 24px; /* Adjust the size as needed */
-    font-family: 'fantasy', times; /* Cursive font with fallback */
-    text-align: center; /* Center the text */
-    margin-top: 20px; /* Adds gap below the image */
+    font-family: 'Brush Script MT', cursive;
+    font-size: 24px;
+    font-style: italic;
+    color: #4B0082; /* deep indigo, can change to suit your theme */
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
