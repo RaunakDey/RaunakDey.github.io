@@ -725,3 +725,14 @@ body {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
+
+
+.institution-logos img {
+  vertical-align: middle;
+  border-radius: 4px;
+}
+.institution-logos li {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+}
