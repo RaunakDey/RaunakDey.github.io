@@ -1,7 +1,7 @@
 - name: About
   link: /
   anchor: '#'
-  highlight: true
+  highlight: false
 - name: Research
   link: /
   anchor: '#research'
