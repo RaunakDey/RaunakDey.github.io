@@ -1,7 +1,7 @@
 - name: About
   link: /
   anchor: '#'
-  highlight: false
+  highlight: true
 - name: Research
   link: /
   anchor: '#research'
@@ -26,7 +26,7 @@
   link: /
   anchor: '#teaching'
   highlight: false
-- name: Media
+- name: Press
   link: /
   anchor: '#media'
   highlight: false
