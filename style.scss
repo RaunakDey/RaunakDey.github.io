@@ -222,6 +222,14 @@ body {
   max-width: 850px;   
 }
 
+
+#research h2.section-title {
+  font-size: 2.0rem;       /* Bigger title */
+  text-align: center;      /* Centered */
+  margin-bottom: 40px;     /* Spacing below title */
+  font-weight: 700;        /* Optional: bolder look */
+}
+
 // Publications
 
 #publication h2.section-title {
@@ -317,7 +325,7 @@ body {
 }
 
 #experience h2.section-title {
-  font-size: 2.0rem;       /* Bigger title */
+  font-size: 2.0 rem;       /* Bigger title */
   text-align: center;      /* Centered */
   margin-bottom: 40px;     /* Spacing below title */
   font-weight: 700;        /* Optional: bolder look */
@@ -520,13 +528,6 @@ body {
     text-align: left;
 }
 
-#talks h2.section-title {
-  font-size: 2.0rem;       /* Bigger title */
-  text-align: center;      /* Centered */
-  margin-bottom: 40px;     /* Spacing below title */
-  font-weight: 700;        /* Optional: bolder look */
-}
-
 .section-title {
     font-size: 1.75rem;
     margin-bottom: 20px;
@@ -590,8 +591,19 @@ body {
 }
 
 
+#talks h2.section-title {
+  font-size: 2.0rem;       /* Bigger title */
+  text-align: center;      /* Centered */
+  margin-bottom: 40px;     /* Spacing below title */
+  font-weight: 700;        /* Optional: bolder look */
+}
 
-
+#media h2.section-title {
+  font-size: 2.0rem;       /* Bigger title */
+  text-align: center;      /* Centered */
+  margin-bottom: 40px;     /* Spacing below title */
+  font-weight: 700;        /* Optional: bolder look */
+}
 
 
 .teaching-item {
@@ -644,14 +656,6 @@ body {
 }
 
 /* Media Section */
-#media h2.section-title {
-  font-size: 2.0rem;       /* Bigger title */
-  text-align: center;      /* Centered */
-  margin-bottom: 40px;     /* Spacing below title */
-  font-weight: 700;        /* Optional: bolder look */
-}
-
-
 .section-title {
     text-align: center;
     margin-bottom: 30px;
