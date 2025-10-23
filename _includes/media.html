@@ -1,27 +1,51 @@
 <h2 class="section-title" id="media">Press</h2>
+
+<!-- Load Iframely ONCE, securely -->
+<script async src="https://iframely.net/embed.js"></script>
+
 <div class="media-container">
 
-    <div class="media-frame">
-        <div class="iframely-embed">
-            <div class="iframely-responsive" style="padding-bottom: 56.25%; padding-top: 120px;">
-                <a href="https://researchmatters.in/news/natural-process-may-hold-clue-secure-encryption-communications" data-iframely-url="//iframely.net/etUtg1j"></a>
-            </div>
-        </div>
-        <script async src="//iframely.net/embed.js"></script>
-    </div>
-    
-    <div class="media-frame">
-        <iframe src="https://heyzine.com/flip-book/fe74c0b1da.html#page/13" title="'Complex Systems' Simplified: Nobel Prize in Physics"></iframe>
+  <!-- 1) UMD article FIRST -->
+  <div class="media-frame">
+    <div class="iframely-embed">
+      <div class="iframely-responsive" style="padding-bottom: 56.25%; padding-top: 120px;">
+        <a href="https://cmns.umd.edu/news-events/news/raunak-dey-makes-physics-and-math-go-viral" target="_blank" rel="noopener"></a>
+      </div>
     </div>
 
-    <div class="media-frame">
-        <div class="iframely-embed">
-            <div class="iframely-responsive" style="padding-bottom: 56.25%; padding-top: 120px;">
-                <a href="https://cmns.umd.edu/news-events/news/raunak-dey-makes-physics-and-math-go-viral" 
-                   data-iframely-url="//iframely.net/custom?title=When%20Physics%20and%20Math%20go%20Viral"></a>
-            </div>
-        </div>
-        <script async src="//iframely.net/embed.js"></script>
+    <!-- Static fallback (use your own thumbnail path) -->
+    <noscript>
+      <a href="https://cmns.umd.edu/news-events/news/raunak-dey-makes-physics-and-math-go-viral" target="_blank" rel="noopener">
+        <img src="/assets/media/umd-viral-thumb.jpg" alt="When Physics and Math go Viral" />
+      </a>
+    </noscript>
+  </div>
+
+  <!-- 2) Research Matters -->
+  <div class="media-frame">
+    <div class="iframely-embed">
+      <div class="iframely-responsive" style="padding-bottom: 56.25%; padding-top: 120px;">
+        <a href="https://researchmatters.in/news/natural-process-may-hold-clue-secure-encryption-communications" target="_blank" rel="noopener"></a>
+      </div>
     </div>
+
+    <noscript>
+      <a href="https://researchmatters.in/news/natural-process-may-hold-clue-secure-encryption-communications" target="_blank" rel="noopener">
+        <img src="/assets/media/researchmatters-thumb.jpg" alt="Natural process may hold clue..." />
+      </a>
+    </noscript>
+  </div>
+
+  <!-- 3) Heyzine flipbook -->
+  <div class="media-frame">
+    <iframe
+      src="https://heyzine.com/flip-book/fe74c0b1da.html#page/13"
+      title="'Complex Systems' Simplified: Nobel Prize in Physics"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer"
+      style="width:100%; height:100%; border:0;">
+    </iframe>
+  </div>
 
 </div>
