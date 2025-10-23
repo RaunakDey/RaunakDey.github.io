@@ -11,8 +11,8 @@
   anchor: '#publications'
   highlight: false
 - title: Software
-  url: "#software"
-  anchor: 'software'
+  link: /
+  anchor: '#software'
   highlight: false
 - name: Experience
   link: /
