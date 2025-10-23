@@ -1,31 +1,123 @@
 <h2 class="section-title" id="media">Press</h2>
 
-<div class="media-container">
+<!-- Scoped styles so it won't affect the rest of your site -->
+<style>
+  /* ===== Media section (scoped) ===== */
+  #media-section {
+    --tile-max: 360px;   /* max size of a square tile on large screens */
+    --gap: 16px;
+    position: relative;
+  }
 
-  <!-- 1) UMD article -->
-  <div class="media-frame">
-    <a href="https://cmns.umd.edu/news-events/news/raunak-dey-makes-physics-and-math-go-viral" target="_blank" rel="noopener">
-      <img src="/images/umd-viral-thumb.jpg" alt="When Physics and Math go Viral" class="media-thumb">
-    </a>
+  #media-section .media-container {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    align-items: start;
+  }
+
+  /* Each tile is a square, with a robust fallback for browsers without aspect-ratio */
+  #media-section .media-frame {
+    position: relative;
+    width: 100%;
+    max-width: var(--tile-max);
+    margin: 0 auto;
+
+    /* Primary: modern square */
+    aspect-ratio: 1 / 1;
+
+    /* Visuals */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #f7f7f8;
+  }
+
+  /* Fallback square (only kicks in if aspect-ratio not supported) */
+  @supports not (aspect-ratio: 1 / 1) {
+    #media-section .media-frame::before {
+      content: "";
+      display: block;
+      padding-top: 100%; /* 1:1 square */
+    }
+    #media-section .media-content {
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  #media-section .media-frame:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  }
+
+  /* Ensure the clickable content fills the square */
+  #media-section .media-link,
+  #media-section .media-content,
+  #media-section .media-thumb,
+  #media-section .media-embed {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Images fill and crop nicely */
+  #media-section .media-thumb {
+    object-fit: cover;
+    border: 0;
+  }
+
+  /* Iframe fills the square; no scrollbars or borders */
+  #media-section .media-embed {
+    border: 0;
+  }
+
+  /* Make the whole image clickable without outlines messing layout */
+  #media-section .media-link {
+    text-decoration: none;
+    outline: none;
+  }
+
+  /* Small devices: slightly larger gaps */
+  @media (max-width: 420px) {
+    #media-section .media-container {
+      gap: 14px;
+    }
+  }
+</style>
+
+<div id="media-section">
+  <div class="media-container">
+
+    <!-- 1) UMD article FIRST -->
+    <div class="media-frame">
+      <a class="media-link" href="https://cmns.umd.edu/news-events/news/raunak-dey-makes-physics-and-math-go-viral" target="_blank" rel="noopener">
+        <img src="/images/umd-viral-thumb.jpg" alt="When Physics and Math go Viral" class="media-thumb">
+      </a>
+    </div>
+
+    <!-- 2) Research Matters -->
+    <div class="media-frame">
+      <a class="media-link" href="https://researchmatters.in/news/natural-process-may-hold-clue-secure-encryption-communications" target="_blank" rel="noopener">
+        <img src="/images/researchmatters-thumb.jpg" alt="Natural process may hold clue to secure encryption" class="media-thumb">
+      </a>
+    </div>
+
+    <!-- 3) Heyzine flipbook (square) -->
+    <div class="media-frame">
+      <!-- The wrapper ensures iframe always fills the square in fallback mode too -->
+      <div class="media-content">
+        <iframe
+          class="media-embed"
+          src="https://heyzine.com/flip-book/fe74c0b1da.html#page/13"
+          title="'Complex Systems' Simplified: Nobel Prize in Physics"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer">
+        </iframe>
+      </div>
+    </div>
+
   </div>
-
-  <!-- 2) Research Matters -->
-  <div class="media-frame">
-    <a href="https://researchmatters.in/news/natural-process-may-hold-clue-secure-encryption-communications" target="_blank" rel="noopener">
-      <img src="/images/researchmatters-thumb.jpg" alt="Natural process may hold clue to secure encryption" class="media-thumb">
-    </a>
-  </div>
-
-  <!-- 3) Heyzine flipbook -->
-  <div class="media-frame">
-    <iframe
-      src="https://heyzine.com/flip-book/fe74c0b1da.html#page/13"
-      title="'Complex Systems' Simplified: Nobel Prize in Physics"
-      loading="lazy"
-      allowfullscreen
-      referrerpolicy="no-referrer"
-      style="width:100%; height:100%; border:0;">
-    </iframe>
-  </div>
-
 </div>
