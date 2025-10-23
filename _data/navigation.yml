@@ -6,9 +6,13 @@
   link: /
   anchor: '#research'
   highlight: false
-- name: Publications
+- name: Publications and Patents
   link: /
   anchor: '#publications'
+  highlight: false
+- title: Software
+  url: "#software"
+  anchor: 'software'
   highlight: false
 - name: Experience
   link: /
