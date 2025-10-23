@@ -2,36 +2,43 @@
   link: /
   anchor: '#'
   highlight: true
+
 - name: Research
   link: /
   anchor: '#research'
   highlight: false
+
 - name: Publications and Patents
   link: /
   anchor: '#publications'
   highlight: false
-- title: Software
+
+- name: Software          # ← was `title`, change to `name`
   link: /
   anchor: '#software'
   highlight: false
+
 - name: Experience
   link: /
   anchor: '#experience'
   highlight: false
+
 - name: Awards
   link: /
   anchor: '#awards'
   highlight: false
+
 - name: Talks
   link: /
   anchor: '#talks'
   highlight: false
+
 - name: Teaching
   link: /
   anchor: '#teaching'
   highlight: false
+
 - name: Press
   link: /
   anchor: '#media'
   highlight: false
-  
