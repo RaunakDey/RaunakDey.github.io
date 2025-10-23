@@ -1,0 +1,150 @@
+<!-- Software Section -->
+<h2 class="section-title" id="software">Software</h2>
+
+<!-- Scoped styles so they don't leak -->
+<style>
+  /* ====== SOFTWARE (scoped to #software-section) ====== */
+  #software-section {
+    --gap: 18px;
+    --card-radius: 14px;
+    --card-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    --card-shadow-hover: 0 6px 18px rgba(0,0,0,0.18);
+    --border: 1px solid rgba(0,0,0,0.06);
+    --accent: #0f62fe;        /* tweak if you want a different accent */
+    --accent-contrast: #fff;
+    margin-top: 8px;
+  }
+
+  #software-section .soft-grid {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: stretch;
+  }
+
+  #software-section .soft-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    border: var(--border);
+    border-radius: var(--card-radius);
+    padding: 16px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  #software-section .soft-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--card-shadow-hover);
+  }
+
+  #software-section .soft-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.25;
+  }
+
+  #software-section .soft-meta {
+    font-size: 0.92rem;
+    color: #555;
+    margin: 0 0 2px 0;
+  }
+
+  #software-section .soft-desc {
+    font-size: 0.98rem;
+    color: #222;
+    margin: 4px 0 8px 0;
+  }
+
+  #software-section .soft-actions {
+    margin-top: auto; /* pushes buttons to bottom for equal-height cards */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  #software-section .soft-btn {
+    appearance: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.08);
+    background: #f5f7ff;
+    color: #0b2b6b;
+    font-weight: 600;
+    font-size: 0.92rem;
+    text-decoration: none;
+    transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  #software-section .soft-btn:hover {
+    background: #e8eeff;
+    transform: translateY(-1px);
+  }
+
+  #software-section .soft-btn.primary {
+    background: var(--accent);
+    color: var(--accent-contrast);
+    border-color: transparent;
+  }
+
+  #software-section .soft-btn.primary:hover {
+    filter: brightness(0.95);
+  }
+
+  /* Small screen tweaks */
+  @media (max-width: 420px) {
+    #software-section .soft-card {
+      padding: 14px;
+    }
+  }
+</style>
+
+<div id="software-section">
+  <div class="soft-grid">
+
+    <!-- InvODE -->
+    <article class="soft-card" aria-label="InvODE">
+      <h3 class="soft-title">InvODE</h3>
+      <p class="soft-meta"><strong>Language:</strong> Python</p>
+      <p class="soft-desc">
+        A lightweight, powerful and intuitive Python library for parameter optimization in ordinary differential
+        equation (ODE) systems. InvODE combines global optimization with local refinement techniques to efficiently
+        find optimal parameter sets for complex dynamical systems.
+      </p>
+      <div class="soft-actions">
+        <a class="soft-btn primary" href="https://raunakdey.github.io/InvODE" target="_blank" rel="noopener">Project Page</a>
+        <a class="soft-btn" href="https://github.com/RaunakDey/InvODE" target="_blank" rel="noopener">Repository</a>
+        <a class="soft-btn" href="https://pypi.org/project/invode/" target="_blank" rel="noopener">PyPI</a>
+      </div>
+    </article>
+
+    <!-- B2 - Bayesian for Biology -->
+    <article class="soft-card" aria-label="B2 — Bayesian for Biology">
+      <h3 class="soft-title">B2 — Bayesian for Biology</h3>
+      <p class="soft-meta"><strong>Language:</strong> Python, MATLAB, Julia</p>
+      <p class="soft-desc">
+        Tools and examples for integrating ODE-based models with Bayesian inference for biological systems.
+      </p>
+      <div class="soft-actions">
+        <a class="soft-btn primary" href="https://github.com/B2-Bayesian-for-Biology" target="_blank" rel="noopener">Repository</a>
+      </div>
+    </article>
+
+    <!-- PHAMILY -->
+    <article class="soft-card" aria-label="PHAMILY — Phage Microbe Analysis">
+      <h3 class="soft-title">PHAMILY: Phage Microbe Analysis</h3>
+      <p class="soft-meta"><strong>Language:</strong> Python</p>
+      <p class="soft-desc">
+        GUI software for Bayesian analysis of phage and microbes, built with PySide, Qt, and PyMC
+        (co-developed by: Timothy Cai).
+      </p>
+      <!-- No links provided — add when available -->
+    </article>
+
+  </div>
+</div>
