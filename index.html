@@ -26,116 +26,7 @@ layout: default
       </p>
     </section>
 
-    <!-- News & Highlights -->
-    <section class="news-section my-4" id="news">
-      <style>
-        #news { border-top: 1px solid #e9ecef; border-bottom: 1px solid #e9ecef; padding: 1.5rem 0 1.25rem; }
-        #news .news-title-h { font-size: 1.75rem; font-weight: 700; text-align: left; color: #333; margin: 0 0 1.1rem; }
-        #news .news-feed { display: grid; gap: 16px; }
-        #news .news-card {
-          display: flex; align-items: stretch; background: #fff; border-radius: 14px;
-          overflow: hidden; text-decoration: none; color: inherit;
-          box-shadow: 0 6px 20px rgba(0,0,0,.06);
-          border-left: 5px solid var(--news-accent, #4f70bf);
-          transition: transform .25s ease, box-shadow .25s ease;
-        }
-        #news .news-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0,0,0,.13); }
-        #news .news-thumb {
-          position: relative; flex: 0 0 132px; width: 132px; min-height: 116px;
-          display: flex; align-items: center; justify-content: center; overflow: hidden;
-          background: linear-gradient(135deg, var(--news-accent, #4f70bf), rgba(0,0,0,.35));
-        }
-        #news .news-thumb i { font-size: 2.3rem; color: rgba(255,255,255,.92); z-index: 1; }
-        #news .news-thumb img {
-          position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-          object-fit: cover; z-index: 2; display: block;
-        }
-        #news .news-body { padding: 14px 18px; display: flex; flex-direction: column; justify-content: center; }
-        #news .news-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; margin-bottom: 6px; }
-        #news .news-date { font-size: .78rem; font-weight: 700; color: #777; letter-spacing: .02em; }
-        #news .news-tag {
-          font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em;
-          color: #fff; background: var(--news-accent, #4f70bf); padding: 3px 11px; border-radius: 999px;
-        }
-        #news .news-title { font-size: 1.05rem; font-weight: 700; line-height: 1.35; color: #1a1a1a; margin: 0 0 4px; transition: color .2s ease; }
-        #news .news-card:hover .news-title { color: var(--news-accent, #4f70bf); }
-        #news .news-desc { font-size: .9rem; line-height: 1.45; color: #666; margin: 0; }
-        @media (max-width: 600px) {
-          #news .news-card { flex-direction: column; }
-          #news .news-thumb { flex-basis: 150px; width: 100%; }
-        }
-      </style>
-
-      <h2 class="news-title-h">News &amp; Highlights</h2>
-      <div class="news-feed">
-
-        <a class="news-card" style="--news-accent:#0072CE;" target="_blank" rel="noopener"
-           href="https://www.linkedin.com/posts/raunak-d-50991214a_elanco-artificialintelligence-computervision-share-7463301353654722560-Bvo2/">
-          <div class="news-thumb">
-            <i class="bi bi-camera-video-fill"></i>
-            <img src="images/news/elanco.jpg" alt="Elanco AI internship" onerror="this.remove()">
-          </div>
-          <div class="news-body">
-            <div class="news-meta"><span class="news-date">May 2026</span><span class="news-tag">Industry</span></div>
-            <p class="news-title">Started as AI R&amp;D Intern at Elanco Animal Health</p>
-            <p class="news-desc">Building computer-vision systems for pharmaceutical research &mdash; foundation models, Bayesian priors, and large-scale video pipelines.</p>
-          </div>
-        </a>
-
-        <a class="news-card" style="--news-accent:#2a9d8f;" target="_blank" rel="noopener"
-           href="https://academic.oup.com/ismej/article/20/1/wrag041/8526250">
-          <div class="news-thumb">
-            <i class="bi bi-journal-text"></i>
-            <img src="images/news/isme.jpg" alt="ISME Journal paper" onerror="this.remove()">
-          </div>
-          <div class="news-body">
-            <div class="news-meta"><span class="news-date">March 2026</span><span class="news-tag">Publication</span></div>
-            <p class="news-title">First-author paper published in <em>The ISME Journal</em></p>
-            <p class="news-desc">&ldquo;Emergent higher-order interactions enable coexistence in phage&ndash;bacteria community dynamics.&rdquo;</p>
-          </div>
-        </a>
-
-        <a class="news-card" style="--news-accent:#6a4c93;" target="_blank" rel="noopener"
-           href="https://www.umiacs.umd.edu/news-events/news/umd-microbiome-fellows-cap-seven-month-program-public-health-panel">
-          <div class="news-thumb">
-            <i class="bi bi-mic-fill"></i>
-            <img src="images/news/microbial-matters.jpg" alt="Microbial Matters panel" onerror="this.remove()">
-          </div>
-          <div class="news-body">
-            <div class="news-meta"><span class="news-date">Dec 2025</span><span class="news-tag">Leadership</span></div>
-            <p class="news-title">Coordinated the &ldquo;Microbial Matters&rdquo; public-health panel</p>
-            <p class="news-desc">Capstone panel for the UMD Microbiome Fellows program, translating microbiome science to public health.</p>
-          </div>
-        </a>
-
-        <a class="news-card" style="--news-accent:#f09228;" target="_blank" rel="noopener"
-           href="https://cmns.umd.edu/news-events/news/raunak-dey-makes-physics-and-math-go-viral">
-          <div class="news-thumb">
-            <i class="bi bi-megaphone-fill"></i>
-            <img src="images/news/physics-viral.jpg" alt="UMD CMNS feature" onerror="this.remove()">
-          </div>
-          <div class="news-body">
-            <div class="news-meta"><span class="news-date">Oct 2025</span><span class="news-tag">Press</span></div>
-            <p class="news-title">Featured by UMD: &ldquo;When Physics and Math Go Viral&rdquo;</p>
-            <p class="news-desc">UMD CMNS profile of my research bridging physics, math, and biology.</p>
-          </div>
-        </a>
-
-        <a class="news-card" style="--news-accent:#e53c50;" target="_blank" rel="noopener"
-           href="https://microbiome.umd.edu/2025/06/20/fellowship-program-builds-bridges-in-microbiome-sciences/">
-          <div class="news-thumb">
-            <i class="bi bi-award-fill"></i>
-            <img src="images/news/fellowship.jpg" alt="Microbiome Fellowship" onerror="this.remove()">
-          </div>
-          <div class="news-body">
-            <div class="news-meta"><span class="news-date">June 2025</span><span class="news-tag">Award</span></div>
-            <p class="news-title">Awarded the UMD Microbiome Research Fellowship</p>
-            <p class="news-desc">Selected for the interdisciplinary fellowship building bridges across the microbiome sciences.</p>
-          </div>
-        </a>
-
-      </div>
-    </section>
+    
 
     <!-- Research Highlights Section -->
     <div class="container my-5">
@@ -230,6 +121,117 @@ layout: default
     </div>
   </div>
 
+  <!-- News & Highlights -->
+  <section class="news-section my-4" id="news">
+    <style>
+      #news { border-top: 1px solid #e9ecef; border-bottom: 1px solid #e9ecef; padding: 1.5rem 0 1.25rem; }
+      #news .news-title-h { font-size: 1.75rem; font-weight: 700; text-align: left; color: #333; margin: 0 0 1.1rem; }
+      #news .news-feed { display: grid; gap: 16px; }
+      #news .news-card {
+        display: flex; align-items: stretch; background: #fff; border-radius: 14px;
+        overflow: hidden; text-decoration: none; color: inherit;
+        box-shadow: 0 6px 20px rgba(0,0,0,.06);
+        border-left: 5px solid var(--news-accent, #4f70bf);
+        transition: transform .25s ease, box-shadow .25s ease;
+      }
+      #news .news-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0,0,0,.13); }
+      #news .news-thumb {
+        position: relative; flex: 0 0 132px; width: 132px; min-height: 116px;
+        display: flex; align-items: center; justify-content: center; overflow: hidden;
+        background: linear-gradient(135deg, var(--news-accent, #4f70bf), rgba(0,0,0,.35));
+      }
+      #news .news-thumb i { font-size: 2.3rem; color: rgba(255,255,255,.92); z-index: 1; }
+      #news .news-thumb img {
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        object-fit: cover; z-index: 2; display: block;
+      }
+      #news .news-body { padding: 14px 18px; display: flex; flex-direction: column; justify-content: center; }
+      #news .news-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; margin-bottom: 6px; }
+      #news .news-date { font-size: .78rem; font-weight: 700; color: #777; letter-spacing: .02em; }
+      #news .news-tag {
+        font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em;
+        color: #fff; background: var(--news-accent, #4f70bf); padding: 3px 11px; border-radius: 999px;
+      }
+      #news .news-title { font-size: 1.05rem; font-weight: 700; line-height: 1.35; color: #1a1a1a; margin: 0 0 4px; transition: color .2s ease; }
+      #news .news-card:hover .news-title { color: var(--news-accent, #4f70bf); }
+      #news .news-desc { font-size: .9rem; line-height: 1.45; color: #666; margin: 0; }
+      @media (max-width: 600px) {
+        #news .news-card { flex-direction: column; }
+        #news .news-thumb { flex-basis: 150px; width: 100%; }
+      }
+    </style>
+
+    <h2 class="news-title-h">News &amp; Highlights</h2>
+    <div class="news-feed">
+
+      <a class="news-card" style="--news-accent:#0072CE;" target="_blank" rel="noopener"
+         href="https://www.linkedin.com/posts/raunak-d-50991214a_elanco-artificialintelligence-computervision-share-7463301353654722560-Bvo2/">
+        <div class="news-thumb">
+          <i class="bi bi-camera-video-fill"></i>
+          <img src="images/news/elanco.jpg" alt="Elanco AI internship" onerror="this.remove()">
+        </div>
+        <div class="news-body">
+          <div class="news-meta"><span class="news-date">May 2026</span><span class="news-tag">Industry</span></div>
+          <p class="news-title">Started as AI R&amp;D Intern at Elanco Animal Health</p>
+          <p class="news-desc">Building computer-vision systems for pharmaceutical research &mdash; foundation models, Bayesian priors, and large-scale video pipelines.</p>
+        </div>
+      </a>
+
+      <a class="news-card" style="--news-accent:#2a9d8f;" target="_blank" rel="noopener"
+         href="https://academic.oup.com/ismej/article/20/1/wrag041/8526250">
+        <div class="news-thumb">
+          <i class="bi bi-journal-text"></i>
+          <img src="images/news/isme.jpg" alt="ISME Journal paper" onerror="this.remove()">
+        </div>
+        <div class="news-body">
+          <div class="news-meta"><span class="news-date">March 2026</span><span class="news-tag">Publication</span></div>
+          <p class="news-title">First-author paper published in <em>The ISME Journal</em></p>
+          <p class="news-desc">&ldquo;Emergent higher-order interactions enable coexistence in phage&ndash;bacteria community dynamics.&rdquo;</p>
+        </div>
+      </a>
+
+      <a class="news-card" style="--news-accent:#6a4c93;" target="_blank" rel="noopener"
+         href="https://www.umiacs.umd.edu/news-events/news/umd-microbiome-fellows-cap-seven-month-program-public-health-panel">
+        <div class="news-thumb">
+          <i class="bi bi-mic-fill"></i>
+          <img src="images/news/microbial-matters.jpg" alt="Microbial Matters panel" onerror="this.remove()">
+        </div>
+        <div class="news-body">
+          <div class="news-meta"><span class="news-date">Dec 2025</span><span class="news-tag">Leadership</span></div>
+          <p class="news-title">Coordinated the &ldquo;Microbial Matters&rdquo; public-health panel</p>
+          <p class="news-desc">Capstone panel for the UMD Microbiome Fellows program, translating microbiome science to public health.</p>
+        </div>
+      </a>
+
+      <a class="news-card" style="--news-accent:#f09228;" target="_blank" rel="noopener"
+         href="https://cmns.umd.edu/news-events/news/raunak-dey-makes-physics-and-math-go-viral">
+        <div class="news-thumb">
+          <i class="bi bi-megaphone-fill"></i>
+          <img src="images/news/physics-viral.jpg" alt="UMD CMNS feature" onerror="this.remove()">
+        </div>
+        <div class="news-body">
+          <div class="news-meta"><span class="news-date">Oct 2025</span><span class="news-tag">Press</span></div>
+          <p class="news-title">Featured by UMD: &ldquo;When Physics and Math Go Viral&rdquo;</p>
+          <p class="news-desc">UMD CMNS profile of my research bridging physics, math, and biology.</p>
+        </div>
+      </a>
+
+      <a class="news-card" style="--news-accent:#e53c50;" target="_blank" rel="noopener"
+         href="https://microbiome.umd.edu/2025/06/20/fellowship-program-builds-bridges-in-microbiome-sciences/">
+        <div class="news-thumb">
+          <i class="bi bi-award-fill"></i>
+          <img src="images/news/fellowship.jpg" alt="Microbiome Fellowship" onerror="this.remove()">
+        </div>
+        <div class="news-body">
+          <div class="news-meta"><span class="news-date">June 2025</span><span class="news-tag">Award</span></div>
+          <p class="news-title">Awarded the UMD Microbiome Research Fellowship</p>
+          <p class="news-desc">Selected for the interdisciplinary fellowship building bridges across the microbiome sciences.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+  
   <!-- RIGHT COLUMN -->
   <div class="col-md-4" style="z-index:4;">
     <img alt="profile photo" id="portrait" src="images/portrait.jpg" style="margin-top: 100px;">
