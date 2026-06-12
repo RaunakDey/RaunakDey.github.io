@@ -104,7 +104,7 @@ span.highlight {
 
 .cool-card {
   background: #ffffff;
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 25px 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -138,6 +138,35 @@ span.highlight {
   font-size: 1rem;
   display: flex;
   align-items: center;
+}
+
+.card-copy {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+.news-section {
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+  padding: 1rem 0;
+}
+
+.news-section h2.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.news-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.news-list li {
+  margin: 0.4rem 0;
+  line-height: 1.45;
 }
 
 // Socials

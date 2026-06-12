@@ -8,17 +8,18 @@ layout: default
     <h1>Raunak Dey</h1>
     <section class="intro-section">
       <p class="text-justify">
-        I am a fourth-year Physics Ph.D. candidate at the
-        <a href="https://umdphysics.umd.edu" target="_blank">Department of Physics at the University of Maryland</a>, College Park.
-        I am advised by <a href="https://biology.umd.edu/people/dr-joshua-weitz" target="_blank">Prof. Joshua Weitz</a> and mentored by
-        <a href="https://sjbeckett.github.io" target="_blank">Dr. Stephen Beckett</a>. My Ph.D. research is focused on Bayesian learning of 
-        phage-microbe interaction traits from population dynamics across scales.
+        I'm a Physics PhD candidate at the
+        <a href="https://umdphysics.umd.edu" target="_blank">University of Maryland</a> working at the intersection of
+        <strong>Bayesian machine learning, scientific AI, and inverse problems</strong>. My work recovers what you can't directly observe
+        &mdash; hidden parameters, states, and interactions &mdash; from noisy, indirect data: across biological interaction networks,
+        population dynamics, time-series forecasting, and, most recently, behavioral phenotyping from video.
       </p>
 
       <p class="text-justify mission-statement">
-        My research focuses on solving <strong>inverse problems</strong> and <strong>optimization problems</strong> using
-        <strong>time series data</strong>. I develop <strong>interpretable models</strong> to uncover parameters and dynamics of complex systems; and <strong>optimal methods</strong> for downstream decision-making under realistic constraints.
-        My mission is <em>building quantitative models for science</em>. <!--So far, my models have:
+        I'm currently an <strong>AI R&amp;D intern at Elanco</strong>, building computer-vision systems for pharmaceutical research,
+        and I develop open-source scientific software (B<sup>2</sup>, InvODE, PHAMILY) along the way. I'm moving into
+        <strong>applied / research scientist roles in scientific and health AI</strong>. My mission is
+        <em>building quantitative models for science</em>. <!--So far, my models have:
       </p>
 
       <ul class="custom-list">
@@ -28,59 +29,74 @@ layout: default
       </ul>
     </section> -->
 
+    <section class="news-section my-4">
+      <h2 class="section-title">News</h2>
+      <ul class="news-list">
+        <li><strong>2026</strong> &mdash; First-author paper published in <em>The ISME Journal</em>: "Emergent higher-order interactions enable coexistence in phage&ndash;bacteria community dynamics."</li>
+        <li><strong>2026</strong> &mdash; Started as <strong>AI R&amp;D Intern at Elanco Animal Health</strong> (computer vision for pharmaceutical research).</li>
+        <li><strong>2026</strong> &mdash; First-author manuscript <em>"Bayesian learning of traits from microbial time series"</em> (with J. Weitz and D. Talmy) under review.</li>
+        <li><strong>2025</strong> &mdash; Talk at <strong>APS Global Summit</strong> on multi-task inference of virus&ndash;microbe interaction networks.</li>
+      </ul>
+    </section>
+
     <!-- Research Highlights Section -->
     <div class="container my-5">
       <div class="row text-center">
 
-        <!-- Tools -->
+        <!-- Microbial networks -->
         <div class="col-md-4 mb-4">
           <div class="cool-card h-100">
             <div class="icon-circle bg-primary text-white mx-auto mb-3">
-              <i class="bi bi-gear-fill fs-3"></i>
+              <i class="bi bi-diagram-3-fill fs-3"></i>
             </div>
-            <h5 class="mb-3 fw-semibold">Mathematical Tools</h5>
-            <ul class="styled-list">
-              <li><i class="bi bi-check-circle-fill me-2 text-primary"></i>Bayesian Inference</li>
-              <li><i class="bi bi-check-circle-fill me-2 text-primary"></i>Optimal Control</li>
-              <li><i class="bi bi-check-circle-fill me-2 text-primary"></i>Constrained Optimization</li>
-              <li><i class="bi bi-check-circle-fill me-2 text-primary"></i>Deep Learning and GenAI</li>
-              <li><i class="bi bi-check-circle-fill me-2 text-primary"></i>Mechanistic ODE models</li>
-            </ul>
+            <h5 class="mb-3 fw-semibold">Bayesian inference of microbial interaction networks</h5>
+            <p class="card-copy">Recovering interaction structure and traits from community time series with hierarchical Bayesian models and MCMC. <em>ISME Journal</em> 2026; Bayesian-traits primer in review.</p>
           </div>
         </div>
 
-        <!-- Domains -->
+        <!-- Behavioral phenotyping -->
         <div class="col-md-4 mb-4">
           <div class="cool-card h-100">
             <div class="icon-circle bg-success text-white mx-auto mb-3">
-              <i class="bi bi-globe2 fs-3"></i>
+              <i class="bi bi-camera-video-fill fs-3"></i>
             </div>
-            <h5 class="mb-3 fw-semibold">Application Domains</h5>
-            <ul class="styled-list">
-              <li><i class="bi bi-check-circle-fill me-2 text-success"></i>Viral Infection Modeling</li>
-              <li><i class="bi bi-check-circle-fill me-2 text-success"></i>Robotics & Rheology</li>
-              <li><i class="bi bi-check-circle-fill me-2 text-success"></i>Nonequilibrium statistical mechanics</li>
-              <li><i class="bi bi-check-circle-fill me-2 text-success"></i>Optics & Instrumentation</li>
-              <li><i class="bi bi-check-circle-fill me-2 text-success"></i>Radio Astronomy</li>
-            </ul>
+            <h5 class="mb-3 fw-semibold">Behavioral phenotyping from video</h5>
+            <p class="card-copy">Reading clinically meaningful behavior from raw video at scale, combining foundation models (SAM2, Gemini) with Bayesian location priors and state-space/HMM temporal structure.</p>
+            <!-- TODO: image -->
           </div>
         </div>
 
-        <!-- Impact -->
+        <!-- Forecasting -->
         <div class="col-md-4 mb-4">
           <div class="cool-card h-100">
             <div class="icon-circle bg-warning text-white mx-auto mb-3">
-              <i class="bi bi-briefcase-fill fs-3"></i>
+              <i class="bi bi-graph-up-arrow fs-3"></i>
             </div>
-            <h5 class="mb-3 fw-semibold">Impact Created</h5>
-            <ul class="styled-list">
-              <li><i class="bi bi-file-earmark-text-fill me-2 text-warning"></i>8 Journal & Conference Papers</li>
-              <li><i class="bi bi-lightbulb-fill me-2 text-warning"></i>1 Patent</li>
-              <li><i class="bi bi-award-fill me-2 text-warning"></i>2 Preprints</li>
-              <li><i class="bi bi-star-fill me-2 text-warning"></i>8 Awards</li>
-              <li><i class="bi bi-people-fill me-2 text-warning"></i>2 Grad & 1 Undergrad Student Mentored</li>
-              <li><i class="bi bi-person-workspace me-2 text-warning"></i>7 Employees Managed</li>
-            </ul>
+            <h5 class="mb-3 fw-semibold">Foundation-model &amp; LLM time-series forecasting</h5>
+            <p class="card-copy">Tokenization schemes and LoRA fine-tuning for forecasting; probing the predictability limits of chaotic and stochastic systems.</p>
+            <!-- TODO: image -->
+          </div>
+        </div>
+
+        <!-- Population dynamics -->
+        <div class="col-md-4 mb-4">
+          <div class="cool-card h-100">
+            <div class="icon-circle bg-info text-white mx-auto mb-3">
+              <i class="bi bi-share-fill fs-3"></i>
+            </div>
+            <h5 class="mb-3 fw-semibold">Network inference from population dynamics</h5>
+            <p class="card-copy">Multitask machine learning to reconstruct virus&ndash;microbe interaction networks from observed dynamics.</p>
+          </div>
+        </div>
+
+        <!-- Stochastic processes -->
+        <div class="col-md-4 mb-4">
+          <div class="cool-card h-100">
+            <div class="icon-circle bg-secondary text-white mx-auto mb-3">
+              <i class="bi bi-activity fs-3"></i>
+            </div>
+            <h5 class="mb-3 fw-semibold">Stochastic processes &amp; signal extraction</h5>
+            <p class="card-copy">Inferring parameters and certified-random numbers from noisy Brownian trajectories; optimal-control sensing for broadband measurement (patented).</p>
           </div>
         </div>
 
@@ -118,7 +134,7 @@ layout: default
   <!-- RIGHT COLUMN -->
   <div class="col-md-4" style="z-index:4;">
     <img alt="profile photo" id="portrait" src="images/portrait.jpg" style="margin-top: 100px;">
-    <p id="description"> Mission: Building quantitative models for science </p>
+    <p id="description"> Recovering the unobserved from noisy data. </p>
 
     <!-- ✅ Social Links moved here -->
     <div class="profile-social text-center mt-3">
