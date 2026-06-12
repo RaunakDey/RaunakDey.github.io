@@ -8,78 +8,80 @@
             <!-- Tabs Navigation -->
             <ul class="nav nav-pills flex-wrap mb-3" id="research-tabs" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#topic1" type="button" role="tab">Biostatistics of viral infections</button>
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#topic1" type="button" role="tab">Bayesian Inference &amp; Inverse Problems</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic2" type="button" role="tab">Optimal control for robotics and rheology
-                    </button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic2" type="button" role="tab">Computer Vision &amp; Behavioral AI</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic3" type="button" role="tab"> LLMs and GenAI for time series forecasting</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic3" type="button" role="tab">Scientific ML &amp; Forecasting</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic4" type="button" role="tab">Applied stochastic physics</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic4" type="button" role="tab">Stochastic Processes &amp; Statistical Physics</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic5" type="button" role="tab"> Instrumentation for optical tweezers and spectroscopy</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic5" type="button" role="tab">Optimal Control &amp; Signal Processing</button>
                 </li>
-
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#topic6" type="button" role="tab"> Software pipelines for radio astronomy</button>
-                </li>
-
             </ul>
 
             <!-- Tabs Content -->
             <div class="tab-content text-justify">
+
+                <!-- TAB 1: Bayesian Inference & Inverse Problems -->
                 <div class="tab-pane fade show active" id="topic1" role="tabpanel">
-                <p><strong>Phage Therapy:</strong> Some viruses (phages) can infect and kill bacterial cells, and are hence used for treating resistant infections. We design pharmacological models of phage therapy using phage cocktails and antibiotics. Aided by HFIM data, we use inverse models to inform such infection treatment models and ask the question: is combination therapy better than single therapy? what is the optimal timing and dosage of such treatments? 
-                </p>
-                 <p><strong> Network of community infections:</strong> In natural ecosystems, multiple species of phages coexist with their bacterial hosts. From observed population dynamics data, we address the question: which phage infects which microbes? Which microbial groups cooperate vs compete? How to infer underlying traits from the observed population dynamics? How different are pairwise interactions from community interactions? How are the populations stabilized in a natural ecosystem? We use ODEs and interaction models to parametrize these systems and constrained optimization techniques to solve inverse problems in these complex systems.
-                 </p>   
-                
+                    <p>A common thread runs through much of my work: recovering hidden structure from indirect, noisy observations — parameters, states, interaction networks, and traits that cannot be measured directly but must be inferred. I approach these as <strong>inverse problems</strong>, solved with Bayesian and probabilistic methods that return full posterior distributions rather than point estimates, making uncertainty explicit.</p>
+
+                    <p><strong>Inference of microbial interaction traits and networks:</strong> In natural ecosystems, multiple phage species coexist with their bacterial hosts in ways that are difficult to observe directly. Starting from population dynamics time series, I build hierarchical Bayesian models — using PyMC and HMC/NUTS samplers — to recover latent infection traits, interaction network structure, and trait distributions across microbial communities. A key finding is that pairwise interaction measurements systematically underestimate community-level dynamics: higher-order interactions emerge at scale, enabling coexistence that pairwise models cannot explain. This is the subject of my first-author paper in <em>The ISME Journal</em> (2026). A companion primer on Bayesian learning of microbial traits from time series is currently in review.</p>
+
+                    <p><strong>Phage therapy and treatment optimization:</strong> Phages can be used to treat antibiotic-resistant bacterial infections. Using pharmacokinetic/pharmacodynamic (PK/PD) models and hollow-fiber infection model (HFIM) data, I apply Bayesian inference to estimate latent treatment parameters across 12 clinical datasets — informing questions like: when is combination phage-antibiotic therapy better than monotherapy, and what dosing schedule is optimal?</p>
+
+                    <p><strong>Sequential Bayesian source localization:</strong> In a search-and-rescue setting, a mobile drone must localize an acoustic emitter using only phase-difference-of-arrival measurements. I designed an optimal sequential Bayesian decision framework: at each step, the drone updates a spatial posterior and computes the information-maximizing next position. Counterintuitively, moving directly toward the estimated source is not optimal — the framework discovers better exploration-exploitation strategies.</p>
                 </div>
 
+                <!-- TAB 2: Computer Vision & Behavioral AI -->
                 <div class="tab-pane fade" id="topic2" role="tabpanel">
-                    <p><strong>Optimal sensing via microrheology:</strong>  In experiments guided with Optical Tweezers, a submicroscopic probe is embedded in complex non-Newtonian fluid. From the observed motion of the microscopic probe, the rheological properties of the fluid can be determined. We design(ed) optimal control algorithms to optimize the signal-to-noise ratio in wideband response measurements, such that they remain in a linear-response regime. Our constrained optimization algorithm outperforms standard techniques in terms of speed and accuracy, which is essential for time-sensitive experiments with biological media. We have used these to study how viscoelastic properties of mutated Lamin differ from the wild type, a mutation linked to cardiomyopathy. 
-                    </p>
-                    <p><strong>Sequential Bayesian localization of acoustic emitter via mobile drone:</strong>  Drones are widely used in search and rescue. Through numerical simulations, we devised a sequential Bayesian framework, for optimally moving a receiver drone to localize an acoustic emitter. The drone uses phase difference of arrival from the source at different time intervals, and each step identifies a posterior for possible location; then it computes where to optimally move. (Hint: moving directly towards the source is not optimal.)
-                    </p>
+                    <p>As an AI R&amp;D intern at <strong>Elanco Animal Health</strong>, I am building a production computer-vision system to classify animal behavior from video for pharmaceutical efficacy studies — across many individuals, multiple cameras and scenes, and strongly imbalanced behavior classes.</p>
+
+                    <p><strong>The core challenge</strong> is that raw video is high-dimensional, expensive, and noisy. The behavior labels come from human-annotated clinical protocols that are inconsistent in time format, duplicated, and misaligned with video timestamps. Before any model can run, the data must be made tractable and trustworthy.</p>
+
+                    <p><strong>Data engineering:</strong> I built an automated pipeline that cleans and time-aligns annotations — deduplicating records, normalizing date and time formats, merging behavior intervals, and matching labels to video frames using <strong>Gemini</strong> as a multimodal timestamp parser. Exploratory analysis then reduced the label space from 15 candidate behaviors to the 6 most informative, grounded in class frequency and clinical relevance.</p>
+
+                    <p><strong>Scalable vision pipeline:</strong> With ~1 TB of video, compute choices matter. A pilot sampling study determined the minimum frame rate and resolution that preserve behavioral signal — dramatically cutting storage and GPU cost. <strong>SAM2</strong> segmentation then crops behavior-relevant regions per frame, reducing redundant background tokens before they reach the model.</p>
+
+                    <p><strong>Probabilistic modeling:</strong> Zero-shot baselines with multimodal foundation models (Gemini) produced weak results on this specialized domain. The approach I am developing layers probabilistic structure on top of fine-tuned representations: <strong>location-conditioned priors</strong> (behaviors are not equally likely at all locations in the scene) and <strong>hidden Markov model / Viterbi decoding</strong> to enforce temporal consistency across frames. This is the same inverse-problem instinct as the phage and drone work — injecting structure the way a Bayesian would, rather than letting the model hallucinate transitions freely.</p>
                 </div>
 
+                <!-- TAB 3: Scientific ML & Forecasting -->
                 <div class="tab-pane fade" id="topic3" role="tabpanel">
-                <p><strong>LLM-based time series forecasting:</strong>  LLMs being trained on large datasets have reliable autoregressive next-word prediction capabilities. Tokenizers are being developed where numbers are mapped to tokens and solving the next token estimation problems with pre-trained LLMs solves the next number prediction problem for time series. For different LLMs and tokenizations, we investigate how zero-shot or few-shot learning is effective for chaotic and stochastic systems (Hint: it is not!).
-                </p>    
-                <p><strong>Gen-AI for time series extrapolation:</strong> Gen-AI models such as VAE, GAN, and diffusion models are excellent in approximating the underlying probability distributions from samples. For physics-derived dynamical systems, we explore Gen-AI models for predictive tasks for undersampled data and sparse time series. 
-                </p>  
+                    <p><strong>LLM and foundation-model time-series forecasting:</strong> Large language models trained on token sequences can, in principle, forecast numerical time series by treating numbers as tokens and next-token prediction as next-step forecasting. I investigated how well zero-shot and few-shot LLM forecasting works on chaotic and stochastic dynamical systems — probing fundamental limits of predictability. A novel <strong>aggregated tokenization scheme</strong> improved forecasting accuracy significantly over standard baselines; LoRA adapters fine-tuned across GPT-4, LLaMA-2, and Mistral further improved task-specific performance while halving training time on HPC clusters. I also benchmarked zero/few-shot forecasting with time-series foundation models (TimesFM, Prophet) on these systems.</p>
+
+                    <p><strong>Network inference from population dynamics:</strong> Given observed abundance trajectories of interacting species, can we recover the underlying interaction network? I developed a multitask ML framework that jointly estimates interaction structure, mechanistic model parameters, and forecasting targets from population-dynamics data — without requiring direct observation of interactions. The framework couples differential-equation constraints with learned representations to regularize the inversion. Presented at NetSci-2024 and APS Global Summit 2025.</p>
+
+                    <p><strong>GPU-accelerated constrained optimization for microbiome networks:</strong> Predicting the dynamics of thousands of coupled microbial interaction networks requires solvers that scale. I designed and deployed a GPU-accelerated adaptive optimizer (TensorFlow/Adam) for large-scale constrained network time-series forecasting, achieving 5× better prediction across 10,000 interaction networks versus a CVXPY baseline.</p>
+
+                    <p><strong>Generative models for time series:</strong> VAE, GAN, and diffusion architectures can approximate underlying probability distributions from samples. For physics-derived dynamical systems with sparse or undersampled observations, I explored generative approaches for predictive extrapolation and uncertainty-aware synthesis of time series.</p>
                 </div>
 
+                <!-- TAB 4: Stochastic Processes & Statistical Physics -->
                 <div class="tab-pane fade" id="topic4" role="tabpanel">
-                    <p><strong>Real random numbers from Brownian trajectories:</strong> 
-                        Algorithms for random number generation produce pseudo-random numbers. Through experimental trajectories of Brownian probes captured via our optical tweezers setup, we developed random number extraction algorithms, based on NIST tests for randomness. We found that the entropy of randomness improves asymptotically as the sampling rate increases. 
-                    </p>
-                    <p>
-                    <strong>Non-equilibrium statistical mechanics:</strong>  We study energy dissipation and thermodynamic currents driving stochastic probes in fluids. With experimentally recorded Brownian trajectories, we discovered how these currents converge to an arcsine distribution, and how they have directional preference depending on the timescale of observation. 
-                    </p>
-                    </div>
+                    <p>Before applying probabilistic methods to biological and health problems, I spent several years studying stochastic processes at a fundamental level — building the theoretical and experimental foundations I now use in ML contexts.</p>
 
+                    <p><strong>Arcsine laws in nonequilibrium systems:</strong> In equilibrium statistical mechanics, the fraction of time a Brownian particle spends on one side of its starting point follows a striking distribution: the arcsine law. We experimentally verified that this result extends to <em>nonequilibrium</em> systems driven by active forces — and showed that the distribution of thermodynamic currents exhibits a non-monotonic skewness as a function of observation timescale that classical theory does not predict. Published in <em>Physical Review E</em> (2022, first author) and <em>Physical Review Research</em> (2022).</p>
+
+                    <p><strong>Random number extraction from stochastic trajectories:</strong> True random numbers are generated by physical processes, not algorithms. Using experimentally recorded Brownian trajectories from an optical trap, I developed ML-based extraction algorithms that pass all NIST statistical randomness tests — and showed that the entropy of the extracted bits improves asymptotically with sampling rate, connecting experimental physics to cryptographic-grade validation. Published in <em>Frontiers in Physics</em> (2021, first author) and presented at SPIE Photonics (2021, oral).</p>
+                </div>
+
+                <!-- TAB 5: Optimal Control & Signal Processing -->
                 <div class="tab-pane fade" id="topic5" role="tabpanel">
-                    <p>
-                        <strong>Optical Tweezers:</strong> A collimated beam of laser when focused by a high numerical aperture lens can capture microscopic probes, such that they can be moved along with the laser beam. At the <a href="https://sites.google.com/iiserkol.ac.in/light-matter-lab-iiserk">Light-Matter Lab (IISER Kolkata)</a> , I developed custom-built optical tweezers and imaging systems for the simultaneous capture of multiple sub-microscopic particles; along with modulation and tracking with nanometer resolution.  
-                    </p>
-                    <p>
-                        <strong>Quantum Spectroscopy:</strong> Entangled photons interacting with matter have their properties altered due to light-matter interactions. At the <a href="https://silva.chemistry.gatech.edu">Silva Lab (Georgia Tech)</a>, I worked on building time-synchronized dual single-photon detection systems, for quantum metrology with these entangled photon pairs.
-                    </p>
-                    <p>
-                        <strong>Microscopy and imaging:</strong> At the <a href="https://lilab.ok.ubc.ca/index.html">Li Lab in the University of British Columbia</a>, I build a custom microscope with two high numerical aperture lenses and 3D motor controls enabled by gaming joysticks.
-                    </p>
+                    <p>Early in my research career I designed algorithms for getting the most out of noisy physical measurement systems — a signal-processing and optimal-control problem that turned out to be excellent training for the Bayesian inference work that followed.</p>
+
+                    <p><strong>Optimal sensing in microrheology:</strong> In optical-tweezers experiments, a microscopic probe embedded in a complex fluid reveals the fluid's viscoelastic properties through its motion. The challenge is that useful signal only exists in a narrow linear-response regime, and noise limits broadband measurement. I designed optimal and feedback-control algorithms — including a multi-sinusoid modulation scheme — that maximize signal-to-noise across a 2 kHz bandwidth, improving measurement speed 20× over single-frequency methods. This work was applied to study the viscoelastic properties of mutated Lamin A (linked to cardiomyopathy) and resulted in an <strong>Indian patent (No. 539208, 2024)</strong>. Published in <em>Physical Review Fluids</em> (2021) and <em>Soft Matter</em> (2021).</p>
+
+                    <p><strong>Signal processing for radio astronomy:</strong> At NCRA (Giant Metrewave Radio Telescope, India), I built a frame-stacking pipeline to filter RFI-corrupted frames from pulsar observations, combining multi-telescope data and frame-to-frame comparison algorithms to recover clean signal from noisy integrations (99% corrupt-frame detection).</p>
+
+                    <p><strong>Microscopy and imaging systems:</strong> At the <a href="https://lilab.ok.ubc.ca/index.html">Li Lab (University of British Columbia)</a>, I built a custom dual-lens microscope with 3D motorized control via gaming joysticks and real-time contour-based particle tracking in MATLAB/LabVIEW. At the <a href="https://silva.chemistry.gatech.edu">Silva Lab (Georgia Tech)</a>, I worked on time-synchronized dual single-photon detection for quantum spectroscopy with entangled photon pairs.</p>
                 </div>
 
-                <div class="tab-pane fade" id="topic6" role="tabpanel">
-                    <p>
-                        GMRT (Giant Meterwave Radio Telescope) in India, employs up to 33 radio telescope dishes to image pulsars (rapidly rotating neutron stars that emit beams of electromagnetic radiation). Due to RFID, these frames (lasting only a few seconds have low SNR). Using multi-detector observations and stacking, we developed a pipeline to filter RDIF corrupt data for radio frequency observation. 
-                    </p>
-                </div>
             </div>
         </div>
     </div>
