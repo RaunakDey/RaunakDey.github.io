@@ -1,5 +1,5 @@
 ---
-title:  "Nonmonotonic skewness of currents in nonequilibrium steady states"
+title:  "Non-monotonic skewness of currents in non-equilibrium steady states"
 date:   2022-08-31 09:26:00 +00:00
 image: /publications/images/skewness.jpg
 image_onhover: /publications/images/skewness.jpg

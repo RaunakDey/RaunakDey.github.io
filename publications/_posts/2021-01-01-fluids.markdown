@@ -1,5 +1,5 @@
 ---
-title:  "Single-shot wideband active microrheology using multiple-sinusoid modulated optical tweezers"
+title:  "Single-shot wideband active microrheology using modulated optical tweezers"
 date:   2021-02-02 09:26:00 +00:00
 image: /publications/images/setup.jpg
 image_onhover: /publications/images/setup.jpg
