@@ -1,13 +1,13 @@
 ---
-title:  "Bayesian learning of traits from microbial time series"
+title:  "Bayesian Learning of Microbial Traits from Population Time Series Data: A Primer"
 date:   2026-01-10 09:26:00 +00:00
-image: /publications/images/phage_front.png
-image_onhover: /publications/images/phage_front.png
+image: /publications/images/primer.png
+image_onhover: /publications/images/primer.png
 author: "Raunak Dey"
-authors: "<strong>Raunak Dey</strong>, J. Weitz, D. Talmy, et al."
+authors: "<strong>Raunak Dey</strong>, Robert Beach, Kennedi M. Hambrick, Ioannis Sgouralis, Paul Fremont, David Demory, Eric Carr, Stephen J. Beckett, Joshua S. Weitz, David Talmy "
 venue: "<i>In Review</i>"
 links:
-  Scholar: https://scholar.google.com/citations?user=2mI3Lx4AAAAJ
+  Code: https://b2-bayesian-for-biology.github.io/MCMCwithODEs_primer/
 ---
 <!-- TODO: add DOI -->
 <!-- TODO: replace thumbnail -->

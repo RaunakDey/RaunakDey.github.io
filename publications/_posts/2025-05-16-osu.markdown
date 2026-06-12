@@ -1,5 +1,5 @@
 ---
-title:  "Emergent higher-order interactions enable coexistence in phage-bacteria community dynamics"
+title:  "Density-dependent feedback and higher-order interactions enable coexistence in phage–bacteria community dynamics"
 date:   2026-01-15 09:26:00 +00:00
 image: /publications/images/phage_front.png
 image_onhover: /publications/images/phage_front.png
@@ -7,5 +7,5 @@ author: "Raunak Dey"
 authors: "<strong>Raunak Dey</strong>, Ashley Coenen, Nalatie Solonenko, Marie Burris, Anna Mackey, Julia Galasso, Christine Sun, David Demory, Daniel Muratore, Stephen Beckett, Matthew Sullivan, Joshua Weitz"
 venue: "The ISME Journal"
 links:
-  Arxiv: https://www.biorxiv.org/content/10.1101/2025.05.15.651590v1
+  ISME J: https://academic.oup.com/ismej/article/20/1/wrag041/8526250
 ---
