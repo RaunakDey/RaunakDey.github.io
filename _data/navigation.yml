@@ -3,6 +3,11 @@
   anchor: '#'
   highlight: true
 
+- name: News
+  link: /
+  anchor: '#news'
+  highlight: false
+
 - name: Research
   link: /
   anchor: '#research'
